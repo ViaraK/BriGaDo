@@ -1,0 +1,384 @@
+/* Основни стилове */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  font-weight: normal;
+}
+
+/* Навигация */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #9e9e9e, #616161);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  z-index: 10;
+  position: relative;
+}
+
+/* Социални икони */
+.social-icons {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 18px;
+  transition: transform 0.2s, color 0.3s;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffdbaa;
+}
+
+/* Навигационни линкове */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffdbaa;
+}
+
+/* Падащо меню */
+.services-menu {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(to right, #9e9e9e, #616161);
+  padding: 0.5rem 1rem;
+  width: 180px;
+  z-index: 1;
+}
+
+.dropdown li {
+  padding: 0.5rem 0;
+}
+
+.services-menu:hover .dropdown {
+  display: block;
+}
+
+/* Бутоните за Join и Log In */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.auth-buttons a {
+  margin-left: 0.6rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.join-btn {
+  background-color: #45a049;
+  color: white;
+}
+
+.join-btn:hover {
+  background-color: #388e3c;
+}
+
+.login-btn {
+  border: 1px solid white;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: #45a049;
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 11;
+}
+
+/* Карусел */
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%;
+}
+
+.slides img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* Бутони за карусела */
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 10px;
+}
+
+.carousel-btn {
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50%;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Мобилна адаптация */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 240px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(to right, #9e9e9e, #616161);
+    padding: 2rem;
+    transition: right 0.3s ease;
+    z-index: 9;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: left;
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+
+  .services-menu .dropdown {
+    position: static;
+    width: 100%;
+  }
+
+  .slides img {
+    height: 200px;
+  }
+
+  body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f7f7;
+  padding: 40px;
+  color: #333;
+}
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
+}
+
+.footer {
+  background: linear-gradient(to right, #9e9e9e, #616161);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.social-icons-footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-items: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.social-item-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer a {
+  color: white;         
+}
+
+.footer a:visited {
+  color: white;         
+}
+
+.footer a:hover {
+  color: #ddd;          
+}
+
+/* Mission button container */
+.mission-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  border-radius: 20px !important;
+  margin-bottom: -40%;
+}
+
+/* Mission button itself */
+.mission-btn {
+  border-radius: 20px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85rem;
+  height: 25rem;
+  background-color: #084e2b;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  gap: 2rem;
+  border: none;
+  cursor: pointer;
+  
+}
+
+/* Optional individual styling */
+.mission-title {
+  font-size: 1.5rem;
+}
+
+.mission-text {
+  font-size: 1rem;
+}
+
+/* Get Latest button container */
+.get-latest-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  border-radius: 20px !important;
+}
+
+/* Logo image above the button */
+.get-latest-brigado-logo {
+  width: 250px;
+  height: auto;
+  margin-bottom: -70px;
+}
+
+/* Button */
+.get-latest-button-outer {
+  width: 60%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ffffff, #388e3c, #ec0c0c);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 45px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.latest-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.news-button {
+  background: linear-gradient(to right, #9e9e9e, #616161);
+  color: white;
+  font-size: 1.25rem;
+  width: 40%;
+  padding: 2ch 3ch;
+  text-box: cap alphabetic;
+  border-radius: 1e3px;
+  border: none;  
+  position: relative;
+  
+}
+
+.news-button::before {
+  box-shadow: #1ef766 10px 10px 10px 10px;
+  filter: blur(10px);
+}
+
+.mission-title{
+  padding-bottom: 15%;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BriGaDo Navigation + Carousel</title>
+
+  <!-- CSS файл -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome за иконите -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Навигация -->
+  <nav class="navbar">
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/brigado-71570735a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/bri_ga_doo/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/18iTUUx4EN/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com/@brigado_bulgaria" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Начало</a></li>
+      <li><a href="#">За нас</a></li>
+      <li class="services-menu">
+        <a href="#">Услуги</a>
+        <ul class="dropdown">
+          <li><a href="#">Услуга 1</a></li>
+          <li><a href="#">Услуга 2</a></li>
+          <li><a href="#">Услуга 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Мрежа от институции</a></li>
+      <li><a href="#">Партньори</a></li>
+      <li><a href="#">Контакти</a></li>
+    </ul>
+
+    <div class="auth-buttons" id="auth-buttons">
+      <a href="#" class="join-btn">Join</a>
+      <a href="#" class="login-btn">Log In</a>
+    </div>
+  </nav>
+
+  <!-- Карусел -->
+  <div class="carousel">
+    <div class="slides" id="slides">
+      <img src="images/1.jpg" alt="LA">
+      <img src="images/2.jpg" alt="NY">
+      <img src="images/3.jpg" alt="Chicago">  
+    </div>
+
+<div class="get-latest-container">
+  <img class="get-latest-brigado-logo" src="/BriGaDo-master/images/BriGaDo logo.svg" alt="BriGaDo Logo">
+  <button class="news-button">Получи новините първи</button>
+</div>
+
+<div class="mission-button">
+  <button class="mission-btn" id="mission-button" >
+    <span class="mission-title"><h1>Нашата мисия</h1></span>
+    <span class="mission-text">текст</span>
+  </button>
+</div>
+
+
+    <!-- footer -->
+  
+      <div class="page-container">
+        <div class="content-wrap">
+          <!-- Your content -->
+        </div>
+        <div class="footer">
+          <div class="social-icons-footer">
+            <div class="social-item-footer">
+              <a href="https://www.linkedin.com/in/brigado-71570735a" target="_blank" style="text-decoration: none;">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <small> _ BriGaDo _</small>
+            </div>
+            <div class="social-item-footer">
+              <a href="https://www.instagram.com/bri_ga_doo/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <small> @bri_ga_doo</small>
+            </div>
+            <div class="social-item-footer">
+              <a href="https://www.facebook.com/share/18iTUUx4EN/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <small> Brigado Bulgaria</small>
+            </div>
+            <div class="social-item-footer">
+              <a href="https://www.tiktok.com/@brigado_bulgaria" target="_blank">
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <small> @brigado_bulgaria</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        
+
+
+
+  <!-- JavaScript -->
+  <script src="scripts.js"></script>
+
+  
+</body>
+</html>

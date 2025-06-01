@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗА НАС</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/brigado-71570735a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/bri_ga_doo/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/18iTUUx4EN/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.tiktok.com/@brigado_bulgaria" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Начало</a></li>
+          <li><a href="./about.html">За нас</a></li>
+          <li class="services-menu">
+            <a href="#">Услуги</a>
+            <ul class="dropdown">
+              <li><a href="#">Услуга 1</a></li>
+              <li><a href="#">Услуга 2</a></li>
+              <li><a href="#">Услуга 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Мрежа от институции</a></li>
+          <li><a href="#">Партньори</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+    
+        <div class="auth-buttons" id="auth-buttons">
+          <a href="#" class="join-btn">Join</a>
+          <a href="#" class="login-btn">Log In</a>
+        </div>
+      </nav>
+
+      <div class="image-background">
+        <div class="carousel-container">
+          <div id="carousel" class="image-row">
+            <img src="/BriGaDo-master/images/Марко Стояновски/1.jpg" alt="Image 1" class="image-about">
+            <img src="/BriGaDo-master/images/Марко Стояновски/2.jpg" alt="Image 2" class="image-about">
+            <img src="/BriGaDo-master/images/Марко Стояновски/3.jpg" alt="Image 3" class="image-about">
+            <img src="/BriGaDo-master/images/Марко Стояновски/4.jpg" alt="Image 4" class="image-about">
+            <img src="/BriGaDo-master/images/Марко Стояновски/5.jpg" alt="Image 5" class="image-about">
+          </div>
+          <button class="carousel-btn left" onclick="moveCarousel(-1)">←</button>
+          <button class="carousel-btn right" onclick="moveCarousel(1)">→</button>
+        </div>
+        <div class="why-us">
+            <nav class="separator"></nav>
+            <p style="margin: -10px;">Защо точно ние?</p> <br>
+            <p>Защо точно ние?
+                Ние сме млад и амбициозен екип, който познава проблема отвътре. Със страст и отдаденост работим за по-добро бъдеще – за България и за младите хора в нея!
+                Макар и млади, сме си поставили високи цели и ежедневно полагаме усилия, за да ги постигнем.</p>
+            <nav class="separator"></nav>
+        </div>
+        <div class="team">
+            <!-- First Team Member -->
+            <div class="team-member">
+              <div class="team-member-content">
+                <div class="team-member-text">
+                  <h2>Марко Стояновски</h2>
+                  <h3>Главен Технически директор</h3>
+                  <!---- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p> -->
+                </div>
+                <img src="/BriGaDo-master/images/Марко Стояновски/1.jpg" alt="Team Member 1">
+              </div>
+            </div>
+            <nav class="separator"></nav>
+            
+            <!-- Second Team Member (now properly wrapped) -->
+            <div class="team-member">  <!-- This wrapper was missing -->
+              <div class="team-member-content">
+                <div class="team-member-text">
+                  <h2>Вяра Костадинова</h2>
+                  <h3>Главен Изпълнителен Директор</h3>
+                  <!---- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p> -->
+                </div>
+                <img src="/BriGaDo-master/images/Марко Стояновски/2.jpg" alt="Team Member 1">
+              </div>
+            </div>
+            <nav class="separator"></nav>
+
+            <!-- Third Team Member -->
+            <div class="team-member">
+              <div class="team-member-content">
+                <div class="team-member-text">
+                  <h2>Джулия Грашева</h2>
+                  <h3>Главен Продуктов Директор</h3>
+                  <!---- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p> -->
+                </div>
+                <img src="/BriGaDo-master/images/Марко Стояновски/3.jpg" alt="Team Member 1">
+              </div>            
+          </div>
+        <nav class="separator"></nav>
+
+        <!-- fourth Team member -->
+        <div class="team-member">
+          <div class="team-member-content">
+            <div class="team-member-text">
+              <h2>Росен Тонев</h2>
+              <h3>Главен Маркетингов Директор</h3>
+              <!---- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p> -->
+            </div>
+            <img src="/BriGaDo-master/images/Марко Стояновски/4.jpg" alt="Team Member 1">
+          </div>
+            <nav class="separator"></nav>
+        </div>
+
+          <!-- fifth Team member -->
+            <div class="team-member" style="margin-bottom: 20px;">
+                <div class="team-member-content">
+                <div class="team-member-text">
+                    <h2>Георги Карайванов</h2>
+                    <h3>Главен Финансов Директор</h3>
+                    <!---- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p> -->
+                </div>
+                <img src="/BriGaDo-master/images/Марко Стояновски/5.jpg" alt="Team Member 1">
+            </div>
+        </div>
+
+    </div>
+     <!-- footer-->
+     <div class="footer">
+        <div class="social-icons-footer">
+          <div class="social-item-footer">
+            <a href="https://www.linkedin.com/in/brigado-71570735a" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <small>_ BriGaDo _</small>
+          </div>
+          <div class="social-item-footer">
+            <a href="https://www.instagram.com/bri_ga_doo/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <small>@bri_ga_doo</small>
+          </div>
+          <div class="social-item-footer">
+            <a href="https://www.facebook.com/share/18iTUUx4EN/" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <small>Brigado Bulgaria</small>
+          </div>
+          <div class="social-item-footer">
+            <a href="https://www.tiktok.com/@brigado_bulgaria" target="_blank">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <small>@brigado_bulgaria</small>
+          </div>
+        </div>
+   
+    
+   <script src="./about-carousel.js"></script> 
+   <script src="./navbar.js"></script>
+</body>
+</html>

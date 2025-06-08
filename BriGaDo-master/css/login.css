@@ -1,0 +1,28 @@
+* {
+    font-family: 'Century Gothic' !important;
+    font-weight: bold !important;
+    padding: 0;
+    border-radius: 0 !important;
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+    top: 13px;
+}
+
+.btn-custom {
+    color: white;
+    width: 100%;
+}
+
+/* Additional styling for the buttons container */
+.d-grid {
+    max-width: 400px;
+    margin: 0 auto;
+}

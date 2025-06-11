@@ -1,28 +1,133 @@
-* {
-    font-family: 'Century Gothic' !important;
-    font-weight: bold !important;
-    padding: 0;
+:root {
+    --font-family: 'Century Gothic';
+    --btn-bg-color: #ffffff;
+    --btn-color: rgb(0, 0, 0);
+}
+*{
     border-radius: 0 !important;
 }
 
+/* Global reset */
+body {
+    font-family: var(--font-family);
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Cards and form controls */
 .card-registration .select-input.form-control[readonly]:not([disabled]) {
     font-size: 1rem;
     line-height: 2.15;
-    padding-left: .75em;
-    padding-right: .75em;
+    padding: 0 0.75em;
 }
 
 .card-registration .select-arrow {
     top: 13px;
 }
 
-.btn-custom {
-    color: white;
-    width: 100%;
+input,
+.form-control-lg {
+    font-size: large;
 }
 
-/* Additional styling for the buttons container */
+/* Buttons */
+.btn-custom,
+.btn-custom-login {
+    color: var(--btn-color);
+    width: 100%;
+    background-color: var(--btn-bg-color);
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Container limit */
 .d-grid {
     max-width: 400px;
     margin: 0 auto;
+}
+
+.background-account-type-chooser{
+    background: linear-gradient(   150deg, green, red);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .d-flex.gap-2 {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .form-control-lg {
+        font-size: medium;
+    }
+
+    .form-label {
+        font-size: 0.9rem;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .col-md-6.mb-4 {
+        margin-bottom: 0.5rem;
+    }
+
+    .form-check-inline {
+        margin-right: 0.5rem;
+    }
+
+    .btn-custom {
+        font-size: 0.9rem;
+        padding: 0.8rem 0.5rem;
+        min-height: 60px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-control-lg {
+        font-size: small;
+    }
+
+    .form-label {
+        font-size: 0.8rem;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .card-registration {
+        margin: 0 0.5rem;
+    }
+
+    .btn-custom {
+        font-size: 0.8rem;
+        padding: 0.7rem 0.3rem;
+        min-height: 50px;
+    }
+
+    .container.py-5.h-100 {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .btn-custom {
+        font-size: 0.75rem;
+    }
 }

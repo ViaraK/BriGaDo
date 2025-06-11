@@ -8,54 +8,70 @@
   <!-- CSS файл -->
   <link rel="stylesheet" href="styles.css" />
 
+  <!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Font Awesome за иконите -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
-  <!-- Навигация -->
-  <nav class="navbar">
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/brigado-71570735a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://www.instagram.com/bri_ga_doo/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/share/18iTUUx4EN/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.tiktok.com/@brigado_bulgaria" target="_blank"><i class="fab fa-tiktok"></i></a>
-    </div>
+    <nav class="navbar">
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/brigado-71570735a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/bri_ga_doo/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/18iTUUx4EN/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@brigado_bulgaria" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
 
-    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
 
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html">Начало</a></li>
-      <li><a href="./about.html">За нас</a></li>
-      <li class="services-menu">
-        <a href="#">Услуги</a>
-        <ul class="dropdown">
-          <li><a href="#">Услуга 1</a></li>
-          <li><a href="#">Услуга 2</a></li>
-          <li><a href="#">Услуга 3</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Мрежа от институции</a></li>
-      <li><a href="#">Партньори</a></li>
-      <li><a href="#">Контакти</a></li>
-    </ul>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="./about.html">За нас</a></li>
+        <li class="services-menu">
+          <a href="#">Услуги</a>
+          <ul class="dropdown">
+            <li><a href="#">Услуга 1</a></li>
+            <li><a href="#">Услуга 2</a></li>
+            <li><a href="#">Услуга 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Мрежа от институции</a></li>
+        <li><a href="#">Партньори</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
 
-    <div class="auth-buttons" id="auth-buttons">
-      <a href="#" class="join-btn">Join</a>
-      <a href="#" class="login-btn">Log In</a>
-    </div>
-  </nav>
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="#" class="join-btn">Join</a>
+        <a href="#" class="login-btn">Log In</a>
+      </div>
+    </nav>
 
+  
   <!-- Карусел -->
-  <div class="carousel">
-    <div class="slides" id="slides">
-      <img src="images/1.jpg" alt="LA">
-      <img src="images/2.jpg" alt="NY">
-      <img src="images/3.jpg" alt="Chicago">  
+  <div id="carouselExampleAutoplaying" class="carousel slide slides" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/BriGaDo-master/images/1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/BriGaDo-master/images/2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/BriGaDo-master/images/3.jpg" class="d-block w-100" alt="...">
+      </div>
     </div>
-
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 <div class="get-latest-container">
-  <img class="get-latest-brigado-logo" src="/images/BriGaDo logo.svg" alt="BriGaDo Logo">
   <button class="news-button" onclick = "location.href='https://docs.google.com/forms/d/1uAoxXGI5aQKe4NP2BNKseLN6pjZEJGz9LZckaHAM1TU/edit '" >Получи новините първи</button>
 </div>
 
@@ -110,6 +126,9 @@
 
   <!-- JavaScript -->
   <script src="scripts.js"></script>
+  <script src="./navbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
   
 </body>

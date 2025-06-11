@@ -207,52 +207,6 @@ html, body {
 
 
 
-/* Карусел */
-.carousel {
-  position: relative;
-  width: 100%;
-  margin: 0;
-  overflow: hidden;
-  background-color: #fff;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 300%;
-}
-
-.slides img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-}
-
-/* Бутони за карусела */
-.carousel-buttons {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-  padding: 0 10px;
-}
-
-.carousel-btn {
-  font-size: 2rem;
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 0.3rem 0.8rem;
-  border-radius: 50%;
-}
-
-.carousel-btn:hover {
-  background: rgba(0, 0, 0, 0.6);
-}
-
 /* Мобилна адаптация */
 @media (max-width: 768px) {
   .menu-toggle {
@@ -704,4 +658,48 @@ html, body {
 html, body {
   min-height: 100vh;
   overflow-y: auto;
+}
+
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff; /* Or whatever your navbar background is */
+  z-index: 10;
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+  }
+
+  .mission-title {
+    font-size: 20px;
+  }
+
+  .mission-text {
+    font-size: 14px;
+  }
+
+  .mission-btn {
+    padding: 20px 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
 }

@@ -12,239 +12,8 @@ html, body {
   overflow-y: auto;
 }
 
-/* Навигация */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to right, #9e9e9e, #616161);
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  flex-wrap: wrap;
-  z-index: 10;
-  position: relative;
-}
-
-/* Социални икони */
-.social-icons {
-  display: flex;
-  gap: 0.8rem;
-  align-items: center;
-}
-
-.social-icons a {
-  color: white;
-  font-size: 18px;
-  transition: transform 0.2s, color 0.3s;
-  text-decoration: none;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2);
-  color: #ffdbaa;
-}
-
-/* Навигационни линкове */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  font-size: 15px;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #ffdbaa;
-}
-
-/* Падащо меню */
-.services-menu {
-  position: relative;
-}
-
-.dropdown {
-  display: none;
-  list-style: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: linear-gradient(to right, #9e9e9e, #616161);
-  padding: 0.5rem 1rem;
-  width: 180px;
-  z-index: 1;
-}
-
-.dropdown li {
-  padding: 0.5rem 0;
-}
-
-.services-menu:hover .dropdown {
-  display: block;
-}
-
-/* Бутоните за Join и Log In */
-.auth-buttons {
-  display: flex;
-  align-items: center;
-}
-
-.auth-buttons a {
-  margin-left: 0.6rem;
-  padding: 0.3rem 0.8rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 13px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.join-btn {
-  background-color: #45a049;
-  color: white;
-}
-
-.join-btn:hover {
-  background-color: #388e3c;
-}
-
-.login-btn {
-  border: 1px solid white;
-  color: white;
-}
-
-.login-btn:hover {
-  background-color: white;
-  color: #45a049;
-}
-
-/* Mobile menu toggle */
-.menu-toggle {
-  display: none;
-  font-size: 26px;
-  color: white;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 11;
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .services-menu {
-    position: static;
-  }
-
-  .dropdown {
-    position: static;
-    width: 100%;
-    display: none;
-    background: rgba(0, 0, 0, 0.1);
-    padding-left: 1rem;
-  }
-
-  .services-menu:hover .dropdown {
-    display: none; /* Disable hover on mobile */
-  }
-
-  .dropdown.active {
-    display: block;
-  }
-
-  .auth-buttons {
-    display: none;
-    width: 100%;
-    margin-top: 1rem;
-    justify-content: center;
-  }
-
-  .auth-buttons.active {
-    display: flex;
-  }
-
-  .social-icons {
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
-}
-
-
-
 /* Мобилна адаптация */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    top: 0;
-    right: -100%;
-    height: 100vh;
-    width: 240px;
-    flex-direction: column;
-    align-items: flex-start;
-    background: linear-gradient(to right, #9e9e9e, #616161);
-    padding: 2rem;
-    transition: right 0.3s ease;
-    z-index: 9;
-  }
-
-  .nav-links.active {
-    right: 0;
-  }
-
-  .nav-links li {
-    width: 100%;
-    padding: 1rem 0;
-    text-align: left;
-  }
-
-  .auth-buttons {
-    display: none;
-  }
-
-  .services-menu .dropdown {
-    position: static;
-    width: 100%;
-  }
-
   .slides img {
     height: 200px;
   }
@@ -382,7 +151,6 @@ html, body {
   margin: 0 auto;
   padding-top: 5em; /* space for absolutely positioned logo */
   box-sizing: border-box;
-  scroll-anchor: none;
 
 }
 .get-latest-brigado-logo {
@@ -666,28 +434,9 @@ html, body {
   object-fit: cover;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #fff; /* Or whatever your navbar background is */
-  z-index: 10;
-}
-
-
-
 @media (max-width: 768px) {
-  .navbar {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 
-  .nav-links li a {
-    font-size: 16px;
-  }
-
-  .mission-title {
+.mission-title {
     font-size: 20px;
   }
 
@@ -699,7 +448,22 @@ html, body {
     padding: 20px 10px;
   }
 
-  .social-icons {
-    justify-content: center;
+
+}
+
+.navbar-gradient{
+  background: linear-gradient(to right, #9e9e9e, #616161);
+}
+
+.social-icons{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (min-width: 990px) {
+  .center-text-custom{  
+  position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
   }
 }

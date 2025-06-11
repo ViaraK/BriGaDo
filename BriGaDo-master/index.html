@@ -15,38 +15,60 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-
-    <nav class="navbar">
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/brigado-71570735a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/bri_ga_doo/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/share/18iTUUx4EN/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.tiktok.com/@brigado_bulgaria" target="_blank"><i class="fab fa-tiktok"></i></a>
+  <nav class="navbar navbar-expand-lg navbar-gradient">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      
+      <!-- Left: Social Icons -->
+      <div class="d-flex align-items-center">
+        <a class="nav-link" href="#"><i class="fab fa-linkedin social-icons"></i></a>
+        <a class="nav-link" href="#"><i class="fab fa-facebook social-icons"></i></a>
+        <a class="nav-link" href="#"><i class="fab fa-tiktok social-icons"></i></a>
+        <a class="nav-link" href="#"><i class="fab fa-instagram social-icons"></i></a>
       </div>
-
-      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
-
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Начало</a></li>
-        <li><a href="./about.html">За нас</a></li>
-        <li class="services-menu">
-          <a href="#">Услуги</a>
-          <ul class="dropdown">
-            <li><a href="#">Услуга 1</a></li>
-            <li><a href="#">Услуга 2</a></li>
-            <li><a href="#">Услуга 3</a></li>
+  
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Center and Right: Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="w-100 d-flex flex-column flex-lg-row align-items-center justify-content-center">
+          <!-- Center: Navbar links -->
+          <ul class="navbar-nav mb-2 mb-lg-0 center-text-custom" >
+            <li class="nav-item">
+              <a class="nav-link" href="#">Начална страница</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">За нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Партньори</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Услуги
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-        <li><a href="#">Мрежа от институции</a></li>
-        <li><a href="#">Партньори</a></li>
-        <li><a href="#">Контакти</a></li>
-      </ul>
-
-      <div class="auth-buttons" id="auth-buttons">
-        <a href="#" class="join-btn">Join</a>
-        <a href="#" class="login-btn">Log In</a>
+  
+          <!-- Right: Auth Buttons -->
+          <div class="d-flex ms-lg-auto mt-2 mt-lg-0">
+            <a href="#" class="btn btn-outline-primary me-2">Login</a>
+            <a href="#" class="btn btn-primary">Signup</a>
+          </div>
+        </div>
       </div>
-    </nav>
+    </div>
+  </nav>
+
 
   
   <!-- Карусел -->

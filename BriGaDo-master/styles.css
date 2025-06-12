@@ -1,36 +1,16 @@
-/* Основни стилове */
-body {
+/* Base Styles */
+html, body {
   margin: 0;
+  min-height: 100vh;
+  height: 100%;
+  overflow-y: auto;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #ffffff;
   color: #333;
+  background-color: #ffffff;
   font-weight: normal;
 }
 
-html, body {
-  min-height: 100vh;
-  overflow-y: auto;
-}
-
-/* Мобилна адаптация */
-@media (max-width: 768px) {
-  .slides img {
-    height: 200px;
-  }
-
-  body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f7f7f7;
-  padding: 40px;
-  color: #333;
-}
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
+/* Page Layout */
 .page-container {
   display: flex;
   flex-direction: column;
@@ -50,6 +30,15 @@ html, body {
   width: 100%;
 }
 
+.footer a,
+.footer a:visited {
+  color: white;
+}
+
+.footer a:hover {
+  color: #ddd;
+}
+
 .social-icons-footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -62,186 +51,78 @@ html, body {
 
 .social-item-footer {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 8px;
   font-size: 16px;
   text-decoration: none;
 }
 
-.footer a {
-  color: white;         
-}
-
-.footer a:visited {
-  color: white;         
-}
-
-.footer a:hover {
-  color: #ddd;          
-}
-
-/* Mission button container */
+/* Mission Section */
 .mission-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
-  margin-bottom: -5rem;
+  margin: 5rem 0 -5rem;
   border-radius: 20px !important;
 }
 
-/* Mission button itself */
 .mission-btn {
-  border-radius: 20px !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 90%;
   max-width: 85rem;
-  height: auto;
-  aspect-ratio: 3 / 2;
   padding: 3em;
   background-color: #084e2b;
   color: white;
-  border-radius: 5px;
   font-weight: bold;
   font-size: 1.2rem;
   gap: 2rem;
   border: none;
+  border-radius: 20px !important;
+  min-height: 15rem;
+  overflow: hidden;
   cursor: pointer;
-  aspect-ratio: auto; /* or just remove this line */
-  min-height: 15rem; /* optional, to keep a minimum height */
-  overflow-y: auto;
 }
 
-/* Optional individual styling */
+.mission-title,
+.mission-text {
+  line-height: 1.2;
+}
+
 .mission-title {
   font-size: clamp(1.5rem, 4vw, 3rem);
-  line-height: 1.2;
+  padding-bottom: 0.5rem;
 }
 
 .mission-text {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
-  line-height: 1.0;
   padding-top: 0.5rem;
 }
 
-@media (max-width: 480px) {
-  .mission-title {
-    text-align: center;
-  }
-
-  .mission-text {
-    text-align: center;
-    margin-top: 0.5rem; /* stable spacing */
-  }
+/* Separator */
+.separator {
+  width: 100%;
+  background: linear-gradient(to right, #9e9e9e, #616161);
+  margin: 15px 0;
+  padding: 5px 0;
+  text-align: center;
+  min-height: 20px;
+  border-radius: 20px;
 }
 
+.separator p {
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  border-radius: 10px;
+}
 
-/* Get Latest button container */
-.get-latest-container {
-  position: relative; /* this is now a stacking context */
+/* Image + Carousel */
+.image-background {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding-top: 5em; /* space for absolutely positioned logo */
-  box-sizing: border-box;
-
-}
-.get-latest-brigado-logo {
-  width: 20%;
-  height: auto;
-  margin-bottom: -2em; /* overlap onto button */
-  position: relative;
-  z-index: 1;
-}
-
-
-/* Button */
-.get-latest-button-outer {
-  width: 60%;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right, #ffffff, #388e3c, #ec0c0c);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 45px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-}
-
-.latest-btn {
-  background: none;
-  border: none;
-  color: inherit;
-  font: inherit;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.news-button {
-  background: linear-gradient(to right, #9e9e9e, #616161);
-  color: white;
-  font-size: 1.25rem;
-  padding: 1em 2em;
-  width: 100%;
-  max-width: 500px;
-  border: none;
-  border-radius: 50px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  box-sizing: border-box;
-  position: relative;
-  z-index: 1; /* Don't go negative */
-
-}
-
-@media (max-width: 768px) {
-  .news-button {
-    font-size: 1rem;
-    padding: 0.75em 1.5em;
-    border-radius: 40px;
-  }
-}
-
-@media (max-width: 460px) {
-  .get-latest-brigado-logo {
-    width: 30%;
-  }
-
-  .news-button {
-    font-size: 1rem;
-    padding: 0.75em 1.5em;
-  }
-}
-
-
-.news-button::before {
-  box-shadow: #1ef766 10px 10px 10px 10px;
-  filter: blur(10px);
-}
-
-.mission-title{
-  padding-bottom: 0.5rem;
-}
-
-.mission-btn {
-  overflow: hidden; /* prevents content from visually spilling outside */
-  /* or overflow-y: auto; if you want scroll instead */
-}
-
-.image-background {
-  position: relative;
   width: 100%;
   overflow: hidden;
 }
@@ -253,124 +134,49 @@ html, body {
 
 .image-about {
   height: auto;
+  object-fit: cover;
 }
 
-/* Desktop */
-@media (min-width: 768px) {
-  .image-row {
-    transform: none !important;
-    margin-top: 15px;
-    gap: 15px;
-  }
-
-  .image-about {
-    width: calc((100% - 60px) / 5);
-    flex: 0 0 auto;
-    border-radius: 10px;
-  }
-
-  .carousel-btn {
-    display: none;
-  }
-}
-
-/* Mobile */
-/* MOBILE carousel layout */
-/* Mobile */
-@media (max-width: 767px) {  
-  .carousel-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-  }
-  
-  #carousel {
-    display: flex;
-    transition: transform 0.3s ease;
-  }
-
-  .image-about {
-    flex: 0 0 auto;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-
-  }
-
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(58, 56, 56, 0.973);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    padding: 0;
-  }
-
-  .carousel-btn.left {
-    left: 15px;
-  }
-
-  .carousel-btn.right {
-    right: 15px;
-  }
-}
-
-
-.separator {
+.carousel-container {
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  background: linear-gradient(to right, #9e9e9e, #616161);
-  margin: 15px 0; /* 15px top and bottom margin */
-  padding: 5px 0; /* Add some padding for the text */
-  text-align: center; /* Center the text */
-  min-height: 20px;
-  border-radius: 20px; 
 }
 
-.separator p {
-  color: white; /* Make text white for better contrast */
-  margin: 0; /* Remove default paragraph margins */
-  font-weight: bold; /* Make text bold */
-  border-radius: 10px; /* Optional: add some border radius */
-}
-
-.image-background {
+#carousel {
   display: flex;
-  flex-direction: column;
+  transition: transform 0.3s ease;
 }
 
-.why-us {
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(58, 56, 56, 0.973);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 80%;
-  margin-left: 10%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.team {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 80%;
-  margin-left: 10%;
-  height: auto;
-  border-radius: 5px;
+  z-index: 10;
+  padding: 0;
 }
 
-.team {
+.carousel-btn.left { left: 15px; }
+.carousel-btn.right { right: 15px; }
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Team Section */
+.team, .why-us {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -393,77 +199,97 @@ html, body {
 }
 
 .team-member-text {
-  order: 1; /* Text comes first in the flex order */
+  order: 1;
   flex: 1;
-  padding-right: 20px; /* Space between text and image */
+  padding-right: 20px;
 }
 
 .team-member img {
-  order: 2; /* Image comes second */
+  order: 2;
   width: 150px;
   height: 150px;
-  border-radius: 10%; /* Makes the image circular */
+  border-radius: 10%;
   object-fit: cover;
 }
 
+/* Navbar & Dropdown */
+.navbar-gradient, .dropdown-menu {
+  background: linear-gradient(to right, #9e9e9e, #616161);
+}
+
+.navbar {
+  position: relative;
+  z-index: 1000;
+}
+
+.dropdown-menu {
+  z-index: 1001 !important;
+  border-radius: 0 !important;
+}
+
+.carousel {
+  position: relative;
+  z-index: 1;
+}
+
+
+.social-icons {
+  margin: 0 10px;
+}
+
+/* News Button */
+.news-button {
+  margin: 50px 0 -50px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #9e9e9e, #616161);
+  border: none !important;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
-  .team-member-content {
-    flex-direction: column;
+  .slides img { height: 200px; }
+  body {
+    background-color: #f7f7f7;
+    padding: 40px;
   }
-  
+  .team-member-content { flex-direction: column; }
   .team-member-text {
     order: 2;
     padding-right: 0;
     text-align: center;
     margin-top: 15px;
   }
-  
-  .team-member img {
-    order: 1;
-  }
-}
-
-html, body {
-  min-height: 100vh;
-  overflow-y: auto;
-}
-
-
-.carousel-item img {
-  height: 100%;
-  object-fit: cover;
-}
-
-@media (max-width: 768px) {
-
-.mission-title {
-    font-size: 20px;
-  }
-
+  .team-member img { order: 1; }
+  .mission-title { font-size: 20px; text-align: center; }
   .mission-text {
     font-size: 14px;
+    text-align: center;
+    margin-top: 0.5rem;
   }
+  .mission-btn { padding: 20px 10px; }
+}
 
-  .mission-btn {
-    padding: 20px 10px;
+@media (min-width: 768px) {
+  .image-row {
+    transform: none !important;
+    margin-top: 15px;
+    gap: 15px;
   }
-
-
+  .image-about {
+    width: calc((100% - 60px) / 5);
+    flex: 0 0 auto;
+    border-radius: 10px;
+  }
+  .carousel-btn { display: none; }
 }
 
-.navbar-gradient{
-  background: linear-gradient(to right, #9e9e9e, #616161);
-}
-
-.social-icons{
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-@media (min-width: 990px) {
-  .center-text-custom{  
-  position: absolute;
-    left: 50%; 
+@media (min-width: 990px){
+  .center-text-custom {
+    position: absolute;
+    left: 50%;
     transform: translateX(-50%);
   }
 }
+

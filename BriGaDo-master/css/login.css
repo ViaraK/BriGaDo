@@ -4,7 +4,7 @@
     --btn-color: rgb(0, 0, 0);
 }
 *{
-    border-radius: 0 !important;
+    border-radius: 10px !important;
 }
 
 /* Global reset */
@@ -25,9 +25,9 @@ body {
     top: 13px;
 }
 
-input,
-.form-control-lg {
+.account-type input {
     font-size: large;
+    background: linear-gradient(to right, #3cb38f, #03ffff);
 }
 
 /* Buttons */
@@ -51,9 +51,7 @@ input,
     margin: 0 auto;
 }
 
-.background-account-type-chooser{
-    background: linear-gradient(   150deg, green, red);
-}
+
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
@@ -131,3 +129,37 @@ input,
         font-size: 0.75rem;
     }
 }
+/* Separator */
+.separator {
+    width: 100%;
+    background: linear-gradient(to right, #3cb38f, #03ffff);
+    margin: 15px 0;
+    padding: 5px 0;
+    text-align: center;
+    min-height: 20px;
+    border-radius: 0px !important;
+  }
+  
+  .separator p {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+
+  @media (max-width: 768px) {
+    .separator p {
+        font-size: 1.5em;
+    }
+  }
+
+
+  @media (max-width: 500px) {
+    .separator p {
+        font-size: 1.0em;
+        margin-bottom: 0.5px;
+    }
+  }

@@ -1,6 +1,6 @@
 :root {
     --font-family: 'Century Gothic';
-    --btn-bg-color: #ffffff;
+    --btn-bg-color: linear-gradient(to right, #3cb38f, #03ffff);
     --btn-color: rgb(0, 0, 0);
 }
 *{
@@ -43,6 +43,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    background:  linear-gradient(to right, #3cb38f, #03ffff);
 }
 
 /* Container limit */
@@ -129,37 +130,49 @@ body {
         font-size: 0.75rem;
     }
 }
-/* Separator */
-.separator {
-    width: 100%;
+
+.navbar-login {
     background: linear-gradient(to right, #3cb38f, #03ffff);
-    margin: 15px 0;
-    padding: 5px 0;
-    text-align: center;
-    min-height: 20px;
-    border-radius: 0px !important;
-  }
-  
-  .separator p {
-    color: white;
-    margin: 0;
-    font-weight: bold;
-    border-radius: 10px;
-    font-size: 2em;
-    margin-top: 10px;
-    margin-bottom: -10px;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
+  .navbar-login p {
+    margin: 0;
+    font-size: 1.5em;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+  }
+ 
+.selection-box-label{
+    font-size: 1.5rem;
+}
+
   @media (max-width: 768px) {
-    .separator p {
-        font-size: 1.5em;
-    }
   }
 
 
   @media (max-width: 500px) {
-    .separator p {
-        font-size: 1.0em;
-        margin-bottom: 0.5px;
+    .navbar-login p {
+        font-size: 1.2em;
     }
+
+     
+    .selection-box-label{
+        font-size: 1.2rem;
+    }
+}
+
+
+  @media (max-width: 350px) {
+    .navbar-login p {
+        font-size: 1.0em;
+    }
+
+    .selection-box-label{
+        font-size: 1.0rem;
+    }
+    
   }

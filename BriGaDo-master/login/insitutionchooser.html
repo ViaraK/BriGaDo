@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="/BriGaDo-master/css/login.css">
 </head>
 <body>
-    <nav class="navbar">
-        <nav class="separator" style="position: absolute; top: 100;"><p>КАКЪВ ВИД ИНСТИТУЦЯ  ДА РЕГИСТРИРАТЕ</p></nav>
-    </nav>
+    <nav class="navbar navbar-login w-100">
+        <div class="container-fluid px-0"> <!-- px-0 removes horizontal padding -->
+          <p href="#">РЕГИСТРИРАНЕ НА ПРОФИЛ</p>
+        </div>
+      </nav>
+      
     <section class="vh-100 gradient-custom">
         <div class="container py-5 h-100">
             <div class="row justify-content-center align-items-center h-100">
@@ -23,6 +26,7 @@
                                     </div>
                                 </div>
                                 <div class="d-grid gap-3 mt-4 pt-2">
+                                    <p href="#" class="selection-box-label">КАКЪВ ВИД ИНСТИТУЦИЯ СТЕ?</p>
                                     <input data-mdb-ripple-init class="btn btn-lg btn-custom account-type" style="    background: linear-gradient(to right, #3cb38f, #03ffff);" type="button" onclick="" id="register-insitutional-select-school" value="УЧИЛИЩЕ" />
                                     <input data-mdb-ripple-init class="btn btn-lg btn-custom account-type" style="    background: linear-gradient(to right, #3cb38f, #03ffff);" type="button"  onclick="" id="register-institutional-select-uni" value="УНИВЕРСИТЕТ" />
                                     <input data-mdb-ripple-init class="btn btn-lg btn-custom account-type" style="    background: linear-gradient(to right, #3cb38f, #03ffff);" type="button" id="register-institutional-select-municipality" value="ОБЩИНА">

@@ -9,59 +9,69 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-gradient">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
-      
-      <!-- Left: Social Icons -->
-      <div class="d-flex align-items-center">
-        <a class="nav-link" href="https://www.linkedin.com/in/brigado-71570735a"><i class="fab fa-linkedin social-icons"></i></a>
-        <a class="nav-link" href="https://www.facebook.com/share/18iTUUx4EN/"><i class="fab fa-facebook social-icons"></i></a>
-        <a class="nav-link" href="https://www.tiktok.com/@brigado_bulgaria"><i class="fab fa-tiktok social-icons"></i></a>
-        <a class="nav-link" href="https://www.instagram.com/bri_ga_doo/"><i class="fab fa-instagram social-icons"></i></a>
-      </div>
-  
-      <!-- Toggler for mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <!-- Center and Right: Collapsible content -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="w-100 d-flex flex-column flex-lg-row align-items-center justify-content-center">
-          <!-- Center: Navbar links -->
-          <ul class="navbar-nav mb-2 mb-lg-0 center-text-custom" >
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Начална страница</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">За нас</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.tiktok.com/@brigado_bulgaria">Партньори</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Услуги
-              </a>
-              <ul class="dropdown-menu" style="z-index: 100;">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-  
-          <!-- Right: Auth Buttons -->
-          <div class="d-flex ms-lg-auto mt-2 mt-lg-0">
-            <a href="/BriGaDo-master/login/userlogin.html" class="btn btn-outline-primary me-2">Login</a>
-            <a href="/BriGaDo-master/login/usertype.html" class="btn btn-primary">Signup</a>
-          </div>
+<nav class="navbar navbar-expand-lg navbar-gradient navbar ">
+  <div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand" href="./index.html">BriGaDo</a>
+
+    <!-- Toggler for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="w-100 d-flex flex-column flex-lg-row align-items-center justify-content-center">
+        <!-- Navbar links -->
+        <ul class="navbar-nav mb-2 mb-lg-0 center-text-custom">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Начална страница</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">За нас</a>
+          </li>
+
+          <!-- First Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Услуги
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+          <!-- Second Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Други услуги
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Допълнителна опция</a></li>
+              <li><a class="dropdown-item" href="#">Още една опция</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Нещо друго</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Right: Auth Buttons -->
+        <div class="d-flex ms-lg-auto mt-2 mt-lg-0">
+          <a href="./login/userlogin.html" class="btn btn-outline-primary me-2">Login</a>
+          <a href="./login/usertype.html" class="btn btn-primary">Signup</a>
         </div>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
+
+  
       <div class="image-background">
         <div class="carousel-container">
           <div id="carousel" class="image-row">
@@ -149,33 +159,59 @@
 
     </div>
      <!-- footer-->
-     <div class="footer">
-        <div class="social-icons-footer">
-          <div class="social-item-footer">
-            <a href="https://www.linkedin.com/in/brigado-71570735a" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <small>_ BriGaDo _</small>
-          </div>
-          <div class="social-item-footer">
-            <a href="https://www.instagram.com/bri_ga_doo/" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <small>@bri_ga_doo</small>
-          </div>
-          <div class="social-item-footer">
-            <a href="https://www.facebook.com/share/18iTUUx4EN/" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <small>Brigado Bulgaria</small>
-          </div>
-          <div class="social-item-footer">
-            <a href="https://www.tiktok.com/@brigado_bulgaria" target="_blank">
-              <i class="fab fa-tiktok"></i>
-            </a>
-            <small>@brigado_bulgaria</small>
-          </div>
+         <!-- footer -->
+  
+      <div class="page-container">
+        <div class="content-wrap">
+          <!-- Your content -->
         </div>
+        <div class="footer">
+  <div class="footer-content">
+    <div class="social-icons-footer">
+       <div class="social-item-footer">
+              <a href="https://www.linkedin.com/in/brigado-71570735a" target="_blank" style="text-decoration: none;">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <small> _ BriGaDo _</small>
+            </div>
+            <div class="social-item-footer">
+              <a href="https://www.instagram.com/bri_ga_doo/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <small> @bri_ga_doo</small>
+            </div>
+            <div class="social-item-footer">
+              <a href="https://www.facebook.com/share/18iTUUx4EN/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <small> Brigado Bulgaria</small>
+            </div>
+            <div class="social-item-footer">
+              <a href="https://www.tiktok.com/@brigado_bulgaria" target="_blank">
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <small> @brigado_bulgaria</small>
+            </div>
+    </div>
+    <div class="useful-links">
+      <p>Полезни линкове</p>
+      <a href="./useful/faq.html">ЧЗВ</a>
+      <a href="./forum/mainpage.html">Форум</a>
+      <a href="./useful/TAC.html">Общи условия</a>
+      <a href="./useful/Privacy.html">Лични данни</a>
+    </div>
+        <div class="useful-links">
+      <p>За нас</p>
+      <a href="./useful/faq.html">Мисия</a>
+      <a href="./forum/mainpage.html">Защо нас?</a>
+      <a href="./useful/TAC.html">Услуги</a>
+      <a href="./useful/Privacy.html">Партньори</a>
+    </div>
+  </div>
+</div>
+
+        
+
    
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
    <script src="./about-carousel.js"></script> 

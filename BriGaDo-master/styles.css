@@ -30,6 +30,17 @@ html, body {
   width: 100%;
 }
 
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+
 .footer a,
 .footer a:visited {
   color: white;
@@ -39,14 +50,25 @@ html, body {
   color: #ddd;
 }
 
-.social-icons-footer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+.social-icons-footer .useful-links {
   justify-items: center;
   align-items: center;
   max-width: 400px;
-  margin: 0 auto;
+  margin-right: -10px;
+  transform: translateX(10%);
+    display: grid;
+}
+
+.social-icons-footer{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 55px;
+}
+
+.useful-links {
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .social-item-footer {
@@ -56,6 +78,7 @@ html, body {
   font-size: 16px;
   text-decoration: none;
 }
+
 
 /* Mission Section */
 .mission-button {
@@ -269,6 +292,13 @@ html, body {
     margin-top: 0.5rem;
   }
   .mission-btn { padding: 20px 10px; }
+}
+
+@media (max-width:700) {
+  .footer-content {
+    font-size: 0.8  rem;
+  }
+  
 }
 
 @media (min-width: 768px) {

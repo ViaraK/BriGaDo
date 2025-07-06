@@ -150,10 +150,6 @@ body {
     font-size: 1.5rem;
 }
 
-  @media (max-width: 768px) {
-  }
-
-
   @media (max-width: 500px) {
     .navbar-login p {
         font-size: 1.2em;

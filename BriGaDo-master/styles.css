@@ -11,15 +11,8 @@ html, body {
 }
 
 /* Page Layout */
-.page-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 50vh;
-}
 
-.content-wrap {
-  flex: 1;
-}
+
 .footer {
   height: auto;
   background: linear-gradient(to right, #9e9e9e, #616161);
@@ -142,6 +135,7 @@ html, body {
   min-height: 15rem;
   overflow: hidden;
   cursor: pointer;
+  margin-bottom: 200px;
 }
 
 .mission-title,
@@ -307,15 +301,11 @@ html, body {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
-  .page-container{
-    font-size: 0.8rem;
-  }
 
+@media (max-width: 768px) {
   .slides img { height: 200px; }
   body {
     background-color: #f7f7f7;
-    padding: 40px;
   }
   .team-member-content { flex-direction: column; }
   .team-member-text {
@@ -357,15 +347,3 @@ html, body {
   }
 }
 
-@media (max-width: 850px){
-  .page-container{
-    min-height: 60vh;
-  }
-}
-
-@media (max-width: 710px) {
-  .page-container{
-  min-height: 70vh !important;
-  margin-top: 100px;
-  }
-}

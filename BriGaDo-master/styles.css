@@ -14,8 +14,7 @@ html, body {
 .page-container {
   display: flex;
   flex-direction: column;
-  min-height: 90vh;
-  margin-top: -30%;
+  min-height: 50vh;
 }
 
 .content-wrap {
@@ -358,3 +357,15 @@ html, body {
   }
 }
 
+@media (max-width: 850px){
+  .page-container{
+    min-height: 60vh;
+  }
+}
+
+@media (max-width: 710px) {
+  .page-container{
+  min-height: 70vh !important;
+  margin-top: 100px;
+  }
+}

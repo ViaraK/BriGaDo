@@ -130,7 +130,7 @@ html, body {
   width: 90%;
   max-width: 85rem;
   padding: 3em;
-  background-color: #084e2b;
+  background-color: #0b4f2a;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
@@ -400,11 +400,7 @@ html, body {
   z-index: 1000;
 }
 
-/* .navbar-gradient a,
-.navbar-gradient .nav-link,
-.navbar-gradient .navbar-brand {
-  color: #ffffff;
-} */
+
 .navbar-gradient a,
 .navbar-gradient .nav-link,
 .navbar-gradient .navbar-brand,

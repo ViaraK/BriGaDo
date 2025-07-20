@@ -25,6 +25,7 @@ html, body {
   text-align: center;
   padding: 20px 10px;
   width: 100%;
+  margin-top: 90px;
 }
 
 .footer-content {
@@ -277,7 +278,7 @@ html, body {
 
 .why-us-wrap {
   margin-top: 50px;
-  
+  margin-bottom: -15px;
 }
 
 
@@ -291,7 +292,7 @@ html, body {
 
 .team-member {
   width: 95%;
-  background-color: #07753e;
+  background-color: #0b4f2a;
   border-radius: 25px;
   margin: 10px;
   overflow: hidden;
@@ -398,6 +399,7 @@ html, body {
 .navbar {
   position: relative;
   z-index: 1000;
+  margin-bottom: 95px;
 }
 
 /* .navbar-gradient a,
@@ -475,6 +477,11 @@ html, body {
 /* Media Queries */
 
 @media (max-width: 768px) {
+  .image-about{
+        padding-right: 10px;
+        padding-left: 10px;
+  }
+
   .slides img { height: 200px; }
   body {
     background-color: #f7f7f7;
@@ -507,7 +514,11 @@ html, body {
     width: calc((100% - 60px) / 5);
     flex: 0 0 auto;
     border-radius: 10px;
+    
+
   }
+
+
   .carousel-btn { display: none; }
 }
 

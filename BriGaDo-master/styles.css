@@ -20,7 +20,7 @@ html, body {
 
 .footer {
   height: auto;
-  background: linear-gradient(to right, #3cb38f, #03ffff);
+  background: linear-gradient(to right, #055a30,#055a45, #07a8a8);
   color: white;
   text-align: center;
   padding: 20px 10px;
@@ -38,7 +38,7 @@ html, body {
 
 .footer a,
 .footer a:visited {
-  color: rgb(0, 0, 0);
+  color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
   
@@ -392,12 +392,29 @@ html, body {
 
 /* Navbar & Dropdown */
 .navbar-gradient, .dropdown-menu {
-  background: linear-gradient(to right, #3cb38f, #03ffff);
+  background: linear-gradient(to right, #055a30,#055a45, #07a8a8);
 }
 
 .navbar {
   position: relative;
   z-index: 1000;
+}
+
+/* .navbar-gradient a,
+.navbar-gradient .nav-link,
+.navbar-gradient .navbar-brand {
+  color: #ffffff;
+} */
+.navbar-gradient a,
+.navbar-gradient .nav-link,
+.navbar-gradient .navbar-brand,
+.navbar-gradient .nav-link:focus,
+.navbar-gradient .nav-link:hover,
+.navbar-gradient .navbar-brand:focus,
+.navbar-gradient .navbar-brand:hover,
+.navbar-gradient .active,
+.navbar-gradient .nav-item.active .nav-link {
+  color: #ffffff ;
 }
 
 .dropdown-menu {

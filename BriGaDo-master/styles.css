@@ -4,15 +4,23 @@ html, body {
   min-height: 100vh;
   height: 100%;
   overflow-y: auto;
-  font-family: 'Segoe UI', sans-serif;
   color: #333;
   background-color: #ffffff;
   font-weight: normal;
   text-decoration: none;
+  font-family: 'Inter', sans-serif;
+    color: white;
+
 }
 
 * {
    text-decoration: none !important;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0 auto;
 }
 
 /* Page Layout */

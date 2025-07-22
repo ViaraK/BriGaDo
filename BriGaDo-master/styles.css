@@ -273,7 +273,9 @@ html, body {
   transform: translateX(calc(50vw - 100px));
   background-color: white;
   border-radius: 50%;
-  border: 5px solid rgb(0, 0, 0)
+  /* Box shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0.2);
+  
 }
 
 .why-us-wrap {
@@ -399,7 +401,7 @@ html, body {
 .navbar {
   position: relative;
   z-index: 1000;
-  margin-bottom: 95px;
+  margin-bottom: 65px;
 }
 
 
@@ -435,6 +437,7 @@ html, body {
   border-style: solid !important;
   border-width: 5px !important;
   border-color: white !important;
+  color: black !important;
 }
 
  .login-butt:hover{

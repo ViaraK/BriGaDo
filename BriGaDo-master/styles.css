@@ -315,6 +315,10 @@ p {
   color: white;
 }
 
+.team-member-text h1 {
+ font-size: 24px !important;
+}
+
 .team-member-content {
   display: flex;
   flex-direction: column;
@@ -326,8 +330,8 @@ p {
 }
 
 .team-member img {
-  width: 180px;
-  height: 180px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   margin: 0;

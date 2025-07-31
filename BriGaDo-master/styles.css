@@ -478,6 +478,14 @@ p {
   transform: none;
 }
 
+.read-more-btn {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
 
 
 /* News Button */

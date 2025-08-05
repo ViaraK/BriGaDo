@@ -500,6 +500,53 @@ p {
   border: none !important;
 }
 
+    .accordion {
+      background-color: #eee;
+      border: none;
+      cursor: pointer;
+      padding: 15px 18px;
+      width: 100%;
+      text-align: left;
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+      margin: 8px 0;
+    }
+
+    .accordion:hover,
+    .accordion.active {
+      background-color: #ccc;
+    }
+
+    .accordion .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .accordion.active .arrow {
+      transform: rotate(90deg);
+    }
+
+    .panel {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      background-color: white;
+      transition: max-height 0.3s ease-out;
+      border-radius: 0 0 5px 5px;
+      margin-bottom: 10px;
+    }
+
+    .panel p {
+      margin: 15px 0;
+    }
+
+    nav.separator {
+      font-weight: bold;
+    }
+
 /* Media Queries */
 
 @media (max-width: 768px) {

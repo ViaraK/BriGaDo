@@ -68,9 +68,64 @@
     </div>
   </nav>
   <div style="width: 80%; transform: translateX(10%);">
-    <nav class="separator" ><h1> Често задавани въпроси</h1></nav>
-     <nav class="separator">Защо създадохте бригадо?</nav>
-     <p>За да подпомогнем студентите да си намерят работа, а работодателите: Работна ръка</p>
+     <nav class="separator"><h1>Често задавани въпроси</h1></nav>
+
+  <button class="accordion">
+    Кои сме ние?
+    <span class="arrow">▶</span>
+  </button>
+  <div class="panel">
+    <p>BriGaDo е иновативна платформа, която свързва бизнеса с млади и мотивирани кадри.</p>
+  </div>
+
+  <button class="accordion">
+    Как мога да започна?
+    <span class="arrow">▶</span>
+  </button>
+  <div class="panel">
+    <p>За да започнеш първоначално трябва да се регистрираш в нашия сайт и ние ще открием най-подходящото място за теб според твоите умения и качества и желания.</p>
+  </div>
+
+  <button class="accordion">
+    Какво правим?
+    <span class="arrow">▶</span>
+  </button>
+  <div class="panel">
+    <p>Ние осигуряваме сезонна и постоянна работа на млади хора между 16 и 30 години и същевременно амбициозни кадри на бизнеса.</p>
+  </div>
+
+  <button class="accordion">
+    Кога мога да започна?
+    <span class="arrow">▶</span>
+  </button>
+  <div class="panel">
+    <p>Може да кандидатстваш за летния и зимния сезон и според нужната заетост ще открием работа за теб в най кратък срок.</p>
+  </div>
+
+  <button class="accordion">
+    Безплатно ли е?
+    <span class="arrow">▶</span>
+  </button>
+  <div class="panel">
+    <p>Всеки човек, търсещ работа може безплатно да я открие.</p>
+  </div>
+
+  <button class="accordion">
+    Кого свързваме?
+    <span class="arrow">▶</span>
+  </button>
+  <div class="panel">
+    <p>Ние свързваме хора, търсещи работа на възраст между 16 и 30 години и работодатели, които предлагат такава, осигурявайки мост между образованието и реалният бизнес.</p>
+  </div>
+
+  <button class="accordion">
+    Къде и като какво мога да работя?
+    <span class="arrow">▶</span>
+  </button>
+  <div class="panel">
+    <p>Можеш да работиш на този етап основно в сектор туризъм през зимният (зимните курорти) и летният (българското черноморие) сезон. Предлагаме и други типове работа с постоянна заетост.</p>
+  </div>
+
 </div>
 
 
@@ -125,6 +180,23 @@
     </div>
   </div>
 </div>
+
+  <script>
+    const accordions = document.querySelectorAll('.accordion');
+
+    accordions.forEach(button => {
+      button.addEventListener('click', () => {
+        button.classList.toggle('active');
+
+        const panel = button.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
 
         
 

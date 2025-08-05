@@ -176,7 +176,7 @@ p {
 /* Separator */
 .separator {
   width: 100%;
-  background: linear-gradient(to right, #3cb38f, #03ffff);
+    background: linear-gradient(to right, #055a30,#055a45, #07a8a8);
   margin: 15px 0;
   padding: 5px 0;
   text-align: center;
@@ -602,4 +602,3 @@ p {
     transform: translateX(-50%);
   }
 }
-

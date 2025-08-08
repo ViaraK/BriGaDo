@@ -40,6 +40,7 @@ p {
   padding: 20px 10px;
   width: 100%;
   margin-top: 90px;
+  
 }
 
 .footer-content {
@@ -47,7 +48,6 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -127,36 +127,74 @@ p {
   }
 }
 
+/* Base styles */
+.top-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap; /* prevents overflow on smaller screens */
+}
+
+.banner-content {
+  padding-right: 20px;
+  flex: 1; /* share space nicely */
+}
+
+.banner-content h1 {
+  margin-right: 20px;
+  padding-right: 40px;
+  font-weight: bolder;
+  color: #14522f;
+  font-size: 2.5rem;
+}
+
+.banner-image {
+  flex-shrink: 0; /* don't let it shrink */
+}
+
+.banner-image img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Responsive layout: Stack content vertically on narrow screens */
+@media (max-width: 768px) {
+  .top-banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .banner-content h1 {
+    font-size: 1.5rem;
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  .banner-image img {
+    max-width: 60vw;
+  }
+}
+
+/* Fine-tune for very narrow screens */
+@media (max-width: 400px) {
+  .banner-content h1 {
+    font-size: 1.2rem;
+  }
+
+  .banner-image img {
+    max-width: 70vw;
+  }
+}
 
 /* Mission Section */
-.mission-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem 0 -5rem;
-  border-radius: 20px !important;
-}
-
-.mission-btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  max-width: 85rem;
-  padding: 3em;
-  background-color: #0b4f2a;
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
-  gap: 2rem;
-  border: none;
-  border-radius: 20px !important;
-  min-height: 15rem;
-  overflow: hidden;
-  cursor: pointer;
-  margin-bottom: 200px;
-}
 
 .mission-title,
 .mission-text {
@@ -214,43 +252,7 @@ p {
   object-fit: cover;
 }
 
-.carousel-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
 
-#carousel {
-  display: flex;
-  transition: transform 0.3s ease;
-}
-
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(58, 56, 56, 0.973);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  padding: 0;
-}
-
-.carousel-btn.left { left: 15px; }
-.carousel-btn.right { right: 15px; }
-
-.carousel-item img {
-  height: 100%;
-  object-fit: cover;
-}
 
 /* Team Section */
 .why-us {
@@ -547,8 +549,13 @@ p {
       font-weight: bold;
     }
 
-/* Media Queries */
+.banner-content{
+  transform: translateX(15%);
 
+}
+
+
+/* Media Queries */
 @media (max-width: 768px) {
   .image-about{
         padding-right: 10px;
@@ -600,5 +607,411 @@ p {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+
+.mission-heading p {
+  font-size: 4rem;
+  width: 450px;
+  color: white;
+}
+
+
+
+@media (max-width: 400px) {
+  .mission-heading p {
+    font-size: 20pt;
+    justify-self: center;/* Base styles */
+.top-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap; /* prevents overflow on smaller screens */
+}
+
+.banner-content {
+  padding-right: 20px;
+  flex: 1; /* share space nicely */
+}
+
+.banner-content h1 {
+  border-right: 5px solid #95191a;
+  margin-right: 20px;
+  padding-right: 40px;
+  font-weight: bolder;
+  color: #14522f;
+  font-size: 2.5rem;
+}
+
+.banner-image {
+  flex-shrink: 0; /* don't let it shrink */
+}
+
+.banner-image img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Responsive layout: Stack content vertically on narrow screens */
+@media (max-width: 768px) {
+  .top-banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .banner-content h1 {
+    font-size: 1.5rem;
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  .banner-image img {
+    max-width: 60vw;
+  }
+}
+
+/* Fine-tune for very narrow screens */
+@media (max-width: 400px) {
+  .banner-content h1 {
+    font-size: 1.2rem;
+  }
+
+  .banner-image img {
+    max-width: 70vw;
+  }
+}
+
+  }
+}
+
+
+@media (max-width: 350px) {
+  .mission-heading p {
+    width: 150px;   
+  }
+}
+
+.mission-content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+    gap: 50px; /* creates spacing between the two grid columns */
+}
+
+.mission-text{
+  color: white;
+  margin-top: 10px;
+  max-width: 50vw;
+  margin-left:  50px;
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+}
+
+.mission-text p {
+  font-size: 2.5rem;
+}
+
+.mission-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.mission-video-player {
+  width: 90%;
+  height: auto;
+  margin-bottom: 75px;
+}
+
+@media (max-width: 1000px) {
+  .mission-content {
+    grid-template-columns: 1fr; /* Stack the columns on smaller screens */
+    gap: 20px; /* Adjust spacing for smaller screens */
+  }
+
+  .mission-text {
+    max-width: 90%; /* Allow text to take full width */
+  
+    padding-bottom: 15px;
+
+  }
+
+  .mission-video {
+    margin-right: 0; /* Remove right margin on small screens */
+    justify-content: center; /* Center video player */
+  }
+
+  .mission-text p {
+  font-size: 2rem;
+}
+}
+
+.how-we-are-doing-it{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(50%);
+  margin-bottom: 100px;
+  background: #14522f;
+  border-radius: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+  color: white;
+  font-weight: 800;
+  
+}
+
+.heading-how-we-are-doing-it p{
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+@media (max-width: 1000px) {
+
+
+  .heading-how-we-are-doing-it p {
+    font-size: 2.5rem ;
+    text-align: center;
+  }
+  
+}
+
+@media (max-width: 768px){
+
+  .heading-how-we-are-doing-it p {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 580px){
+
+  .heading-how-we-are-doing-it p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px){
+
+  .heading-how-we-are-doing-it p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px){
+
+  .heading-how-we-are-doing-it p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+
+.carousel-container {
+  position: relative;
+  display: inline-block; /* keeps it wrapped to the carousel content */
+}
+
+.carousel-btn {
+  position: absolute;
+  bottom: 15%;
+  transform: translateY(-50%); /* center vertically */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carousel-btn.left {
+  left: 10px; /* distance from the left edge */
+  margin-left: 30px;
+}
+
+.carousel-btn.right {
+  position: absolute;
+  left: 73vw; /* distance from the right edge */
+  margin-right: 30px;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.image-background {
+  background: linear-gradient(to right, #055a30, #055a45, #07a8a8);
+  padding: 2rem 0;
+}
+
+.carousel-container {
+  position: relative;
+  display: inline-block;
+}
+
+.advantage-row {
+  display: flex;
+  gap: 1rem;
+  padding-top: 100px;
+  overflow: hidden; /* prevent horizontal scrollbar */
+  scroll-behavior: smooth; /* optional for smooth scroll if needed */
+}
+
+.image-advantage {
+  position: relative;
+  background: white;
+  border-radius: 0.5rem;
+  width: 20%;
+  height: 450px;
+  text-align: center;
+}
+
+/* Circle icon styling remains unchanged */
+.circle-icon {
+  position: absolute;
+  top: 0; /* align to top edge of container */
+  left: 50%;
+  transform: translate(-50%, -50%); /* center horizontally, move up 50% of circle height */
+  background: red;
+  color: white;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .circle-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 1.2rem;
+    top: 0;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .circle-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1rem;
+    top: 0;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+/* Container for heading */
+.advantages-wrapper {
+  position: relative;
+  padding-top: 5rem; /* space for overlapping heading */
+}
+
+/* The heading box styling */
+.advantage-section {
+  transform: translateY(50%);
+  margin-left: 30%;
+  margin-right: 30%;
+  background: #14522f;
+  border-radius: 10px;
+  padding: 1rem 3rem;
+  color: white;
+  font-weight: 800;
+  z-index: 10;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+
+.image-advantage-leftmost {
+  margin-left: 10%;
+}
+
+.image-advantage {
+    padding: 2rem 1rem;
+}
+
+}
+/* Heading text sizes */
+.advantage-heading p{
+  font-size: 3rem;
+}
+
+/* Responsive heading font size */
+@media (max-width: 800px) {
+  .advantage-heading p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .advantage-heading p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .advantage-heading p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Smaller image heights on medium screens */
+@media (max-width: 1000px) {
+  .image-advantage {
+    height: 400px;
+  }
+}
+
+
+
+
+
+/* Extra small devices, further scaling */
+@media (max-width: 480px) {
+  .image-advantage {
+    height: 350px;
+  }
+  .circle-icon {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px !important;
+    top: 0px;
+    font-size: 1rem;
+  }
+}
+
+
+.advantage-text  {
+  margin-top: 35%;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+
+  @media (max-width: 768px) {
+  .advantage-text {
+    font-size: 1.5rem;
+    margin-top: 20%;
   }
 }

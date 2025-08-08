@@ -68,44 +68,96 @@
     </div>
   </nav>
 
-
-  
-  <!-- Карусел -->
-  <div id="carouselExampleAutoplaying" class="carousel slide slides" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./images/1.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./images/2.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./images/3.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+<div class="top-banner">
+  <div class="banner-content">
+    <h1>Бригада</h1>
+    <br>
+    <h1>Работа</h1>
+    <br>
+    <h1>Стаж</h1>
   </div>
-
-
-  <button class="news-button btn btn-primary" type="button" onclick = "location.href='https://docs.google.com/forms/d/1uAoxXGI5aQKe4NP2BNKseLN6pjZEJGz9LZckaHAM1TU/edit '" >Получи новините първи</button>
-
-
-
-<div class="mission-button">
-  <button class="mission-btn" id="mission-button">
-    <h1 class="mission-title">Нашата мисия</h1>
-    <span class="mission-text">Ние сме BriGaDo – иновативна платформа, която свързва бизнеса с млади и мотивирани кадри. Предлагаме проверени, добре организирани и достъпни бригади в България, както и възможности за стажове по специалността.
-      Една от основните ни мисии е да изградим устойчив мост между образованието и бизнеса, така че двете страни да си бъдат взаимно полезни. Вярваме, че младите хора имат нужда от шанс и възможности за развитие, а бизнесът – от млади, квалифицирани и ангажирани служители!</span>
-  </button>
+  <div class="banner-image">
+    <img src="./images/BriGaDo logo.svg" />
+  </div>
+</div>
 </div>
 
+
+<div class="our-mission"   style="background: linear-gradient(to right, #055a30,#055a45, #07a8a8);">
+  <div class="mission-heading" >
+  <p>Нашата мисия </p>
+  </div>
+  <div class="mission-content">
+    <div class="mission-text">
+    <p>Свързваме млади таланти с реалния бизнес осигурявайки път към професионалната реализация и качествени кадри.</p>
+    </div>
+    <div class="mission-video">
+      <video controls class="mission-video-player">
+        <source src="./videos/mission.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+</div>
+
+
+<div class="how-we-are-doing-it">
+  <div class="heading-how-we-are-doing-it">
+    <p>Как го правим?</p>
+    </div>
+  </div>
+</div>
+
+<div class="our-mission" style="background-color: #ffffff !important;" >
+  <div class="mission-content"  >
+    <div class="mission-text">
+    <p style="color: black;">Свързваме млади таланти с реалния бизнес осигурявайки път към професионалната реализация и качествени кадри.</p>
+    </div>
+    <div class="mission-video" style="order: -1;">
+      <video controls class="mission-video-player">
+        <source src="./videos/mission.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+</div>
+</div>
+
+
+
+<div class="advantages-wrapper">
+  <div class="advantage-section">
+    <div class="advantage-heading">
+      <p>Предимства</p>
+    </div>
+  </div>
+
+  <div class="image-background">
+    <div class="carousel-container">
+      <div id="carousel" class="advantage-row">
+         <div class="image-advantage image-advantage-leftmost" >
+          <div class="circle-icon">★</div>
+          <p class="advantage-text">Мост между образованието и бизнеса</p>
+        </div>
+        <div class="image-advantage">
+          <div class="circle-icon">✓</div>
+                    <p class="advantage-text">Помага на млади хора да си намерят работа</p>
+
+        </div>
+        <div class="image-advantage">
+          <div class="circle-icon">⚙</div>
+                    <p class="advantage-text">Улеснява фирмите в намирането на кадри</p>
+
+        </div>
+        <div class="image-advantage">
+          <div class="circle-icon">⚡</div>
+                    <p class="advantage-text">Намалява сивата икономика</p>
+
+
+      </div>
+    </div>
+      <button class="carousel-btn left" onclick="moveCarousel(-1)">←</button>
+  <button class="carousel-btn right" onclick="moveCarousel(1)">→</button>
+  </div>
+</div>
 
     <!-- footer -->
   
@@ -160,7 +212,9 @@
 
 
 
-  <!-- JavaScript -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="./js/carousel-advantage.js"></script> 
   <script src="scripts.js"></script>
   <script src="./navbar.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

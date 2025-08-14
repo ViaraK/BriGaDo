@@ -17,6 +17,7 @@ html, body {
   font-family: 'Inter', sans-serif !important;
   color: #333;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -128,12 +129,14 @@ p {
 }
 
 /* Base styles */
+/* Base styles */
 .top-banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
   flex-wrap: wrap; /* prevents overflow on smaller screens */
+  position: relative; /* Add this for positioning context */
 }
 
 .banner-content {
@@ -150,7 +153,9 @@ p {
 }
 
 .banner-image {
-  flex-shrink: 0; /* don't let it shrink */
+  position: absolute; /* Position absolutely within the top-banner */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for exact centering */
 }
 
 .banner-image img {
@@ -159,7 +164,7 @@ p {
 }
 
 /* Responsive layout: Stack content vertically on narrow screens */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .top-banner {
     flex-direction: column;
     align-items: center;
@@ -169,6 +174,8 @@ p {
   .banner-content {
     padding-right: 0;
     margin-bottom: 20px;
+    position: relative; /* Reset positioning */
+    width: 100%; /* Take full width */
   }
 
   .banner-content h1 {
@@ -178,10 +185,44 @@ p {
     margin-right: 0;
   }
 
+  .banner-image {
+    position: relative; /* Reset to normal flow */
+    left: auto;
+    transform: none;
+    margin-top: 20px;
+  }
+
   .banner-image img {
-    max-width: 60vw;
+    width: 350px;
   }
 }
+
+@media (max-width: 1050px){
+  .banner-image img{
+    max-width: 200px;
+  }
+
+    .banner-content h1 {
+    font-size: 1.5rem;
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+}
+
+@media (max-width: 900px){
+
+
+    .banner-content h1 {
+    font-size: 1.5rem;
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+}
+
 
 /* Fine-tune for very narrow screens */
 @media (max-width: 400px) {
@@ -193,7 +234,6 @@ p {
     max-width: 70vw;
   }
 }
-
 /* Mission Section */
 
 .mission-title,
@@ -1086,4 +1126,18 @@ p {
   .advantage-text {
     font-size: 1.8rem;
   }
+}
+
+.index-heading h1 {
+  border-right-style: solid;
+  border-color: red;
+  width: 200px;
+  color: #0b4f2a; /* Default text color */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Change both border and text color when hovered */
+.index-heading h1:hover {
+  border-right-color: #0b4f2a;
+  color: #95191a; /* Text turns red on hover */
 }

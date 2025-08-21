@@ -945,7 +945,10 @@ p {
   top: 0; /* align to top edge of container */
   left: 50%;
   transform: translate(-50%, -50%); /* center horizontally, move up 50% of circle height */
-  background: red;
+  background: rgb(255, 255, 255);
+  border-width: 2.5px;
+  border-color: black;
+  border-style: solid;
   color: white;
   border-radius: 50%;
   width: 150px;
@@ -1141,3 +1144,4 @@ p {
   border-right-color: #0b4f2a;
   color: #95191a; /* Text turns red on hover */
 }
+

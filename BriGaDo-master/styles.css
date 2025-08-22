@@ -917,8 +917,8 @@ p {
   display: flex;
   gap: 1rem;
   padding-top: 150px;
-  overflow: hidden; /* prevent horizontal scrollbar */
-  scroll-behavior: smooth; /* optional for smooth scroll if needed */
+  overflow: hidden; 
+  scroll-behavior: smooth; 
 }
 
 @media (max-width: 1440px){
@@ -939,21 +939,14 @@ p {
   text-align: center;
 }
 
-/* Circle icon styling remains unchanged */
+
 .circle-icon {
   position: absolute;
-  top: 0; /* align to top edge of container */
+  top: 0; 
   left: 50%;
-  transform: translate(-50%, -50%); /* center horizontally, move up 50% of circle height */
-<<<<<<< HEAD
-  background: rgb(255, 255, 255);
-  border-width: 2.5px;
-  border-color: black;
-  border-style: solid;
-=======
-  background: white;
->>>>>>> d7e0dee (Оправих някои неща по началната страница)
-  color: white;
+  transform: translate(-50%, -50%); 
+  background: white;      
+  color: black;            
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -961,9 +954,10 @@ p {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  margin-bottom: 20px !important; /* space below the circle */
-  border: 2px solid black; 
+  margin-bottom: 20px !important; 
+  border: 2px solid black;       
 }
+
 
 .circle-icon img{
   width: 100px;

@@ -945,10 +945,14 @@ p {
   top: 0; /* align to top edge of container */
   left: 50%;
   transform: translate(-50%, -50%); /* center horizontally, move up 50% of circle height */
+<<<<<<< HEAD
   background: rgb(255, 255, 255);
   border-width: 2.5px;
   border-color: black;
   border-style: solid;
+=======
+  background: white;
+>>>>>>> d7e0dee (Оправих някои неща по началната страница)
   color: white;
   border-radius: 50%;
   width: 150px;
@@ -958,6 +962,7 @@ p {
   justify-content: center;
   font-weight: bold;
   margin-bottom: 20px !important; /* space below the circle */
+  border: 2px solid black; 
 }
 
 .circle-icon img{

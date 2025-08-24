@@ -1,8 +1,19 @@
-:root {
-    --font-family: 'Century Gothic';
-    --btn-bg-color: linear-gradient(to right, #3cb38f, #03ffff);
-    --btn-color: rgb(0, 0, 0);
+@font-face {
+  font-family: 'Inter';
+  src: url('./font/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+
+:root {
+    --font-family: 'Inter';
+    --btn-background:  linear-gradient(to right, #055a30, #055a45, #07a8a8);
+    --btn-color: rgb(255, 255, 255);
+}
+
+
+
 *{
     border-radius: 10px !important;
 }
@@ -27,7 +38,7 @@ body {
 
 .account-type input {
     font-size: large;
-    background: linear-gradient(to right, #3cb38f, #03ffff);
+    background:  linear-gradient(to right, #055a30, #055a45, #07a8a8);
 }
 
 /* Buttons */
@@ -43,7 +54,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background:  linear-gradient(to right, #3cb38f, #03ffff);
+      background: linear-gradient(to bottom, #055a30, #055a45, #07a8a8);
 }
 
 /* Container limit */
@@ -52,11 +63,18 @@ body {
     margin: 0 auto;
 }
 
+.btn-custom-login {
+    font-size: 1rem; /* same as form-control-lg */
+    padding: 0.5rem 0.75rem; /* similar vertical rhythm */
+    height: 48px; /* matches Bootstrap's .form-control-lg height */
+    min-height: auto; /* remove forced min-height */
+    border-radius: 10px;
+}
 
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
-    .d-flex.gap-2 {
+    .d-flex.gap-4 {
         flex-direction: column;
         gap: 0.5rem;
     }
@@ -83,7 +101,7 @@ body {
 
     .btn-custom {
         font-size: 0.9rem;
-        padding: 0.8rem 0.5rem;
+        padding: 0.3rem 0.4rem;
         min-height: 60px;
     }
 
@@ -120,6 +138,12 @@ body {
         min-height: 50px;
     }
 
+        .btn-custom-login {
+        font-size: 0.9rem;
+        height: 42px; /* slightly smaller for mobile */
+        padding: 0.4rem 0.6rem;
+    }
+
     .container.py-5.h-100 {
         padding: 1rem 0;
     }
@@ -127,7 +151,13 @@ body {
 
 @media (max-width: 400px) {
     .btn-custom {
-        font-size: 0.75rem;
+        font-size: 0.70rem;
+    }
+
+        .btn-custom-login {
+        font-size: 0.70rem;
+        height: 38px;
+        padding: 0.35rem 0.5rem;
     }
 }
 

@@ -9,132 +9,111 @@
 </head>
 <body>
 
-
-  <section class="vh-100 gradient-custom">
+<section class="vh-100 gradient-custom">
     <div class="container py-5 h-100">
       <div class="row justify-content-center align-items-center h-100">
         <div class="col-12 col-lg-9 col-xl-7">
-          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+          <div class="card shadow-2-strong card-registration">
             <div class="card-body p-4 p-md-5">
-
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 text-center">РЕГИСТРИРАНЕ НА ЛИЧЕН ПРОФИЛ</h3>
               <form>
 
                 <div class="row">
-                    <div class="col-md-6 mb-4">
-                      <div data-mdb-input-init class="form-outline">
-                        <input type="text" id="firstName" class="form-control form-control-lg" />
-                        <label class="form-label" for="firstName">Първо име</label>
-                      </div>
-                    </div>
-  
-                    <div class="col-md-6 mb-4">
-                      <div data-mdb-input-init class="form-outline">
-                        <input type="text" id="password" class="form-control form-control-lg" />
-                        <label class="form-label" for="Password">Фамилия</label>
-                      </div>
-                    </div>
-                  </div>
-
-                <div class="row">
                   <div class="col-md-6 mb-4">
-                    <div data-mdb-input-init class="form-outline">
+                    <div class="form-outline">
                       <input type="text" id="firstName" class="form-control form-control-lg" />
-                      <label class="form-label" for="firstName">Потребителско име</label>
+                      <label class="form-label" for="firstName">Първо име</label>
                     </div>
                   </div>
-
                   <div class="col-md-6 mb-4">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="text" id="password" class="form-control form-control-lg" />
-                      <label class="form-label" for="Password">Парола</label>
+                    <div class="form-outline">
+                      <input type="text" id="lastName" class="form-control form-control-lg" />
+                      <label class="form-label" for="lastName">Фамилия</label>
                     </div>
                   </div>
                 </div>
 
-                  
                 <div class="row">
-                  <div class="col-md-6 mb-4 pb-2">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="" id="emailAddress" class="form-control form-control-lg" oninput="formatDate(this)" />
-                      <label class="form-label" for="Birthdate" >Рожденна дата</label>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="username" class="form-control form-control-lg" />
+                      <label class="form-label" for="username">Потребителско име</label>
                     </div>
                   </div>
-
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="password" id="password" class="form-control form-control-lg" />
+                      <label class="form-label" for="password">Парола</label>
+                    </div>
+                  </div>
+                </div>
                     
                 <div class="row">
-                  <div class="col-md-6 mb-4 pb-2">
-                    <div data-mdb-input-init class="form-outline">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
                       <input type="email" id="emailAddress" class="form-control form-control-lg" />
                       <label class="form-label" for="emailAddress">Имейл</label>
                     </div>
                   </div>
-
-                  <div class="col-md-6 mb-4 pb-2">
-                    <div data-mdb-input-init class="form-outline">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
                       <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
                       <label class="form-label" for="phoneNumber">Телефонен номер</label>
                     </div>
                   </div>
                 </div>
 
-
+                <div class="row">
                   <div class="col-md-6 mb-4">
                     <h6 class="mb-2 pb-1" style="font-weight: bolder;">Пол</h6>
-
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="femaleGender" value="option1" checked />
+                      <input class="form-check-input" type="radio" name="gender" id="femaleGender" value="female" checked />
                       <label class="form-check-label" for="femaleGender">Жена</label>
                     </div>
-
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="maleGender" value="option2" />
+                      <input class="form-check-input" type="radio" name="gender" id="maleGender" value="male" />
                       <label class="form-check-label" for="maleGender">Мъж</label>
                     </div>
                   </div>
-                </div>
-
-
-                    <div class="row">
-                  <div class="col-md-6 mb-4 pb-2">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="email" id="emailAddress" class="form-control form-control-lg" />
-                      <label class="form-label" for="emailAddress">линк към linkedIn профил*</label>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6 mb-4 pb-2">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
-                      <label class="form-label" for="phoneNumber">Прикачете CV *</label>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="birthdate" class="form-control form-control-lg" oninput="formatDate(this)" placeholder="дд/мм/гггг" />
+                      <label class="form-label" for="birthdate">Рожденна дата</label>
                     </div>
                   </div>
                 </div>
 
-                        <div class="row">
-                  <div class="col-md-6 mb-4 pb-2">
-                    <div data-mdb-input-init class="form-outline">
-                      <input data-mdb-ripple-init class="btn btn-lg btn-custom account-type"  value="Регистриране" />
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="url" id="linkedin" class="form-control form-control-lg" />
+                      <label class="form-label" for="linkedin">Линк към LinkedIn профил*</label>
                     </div>
                   </div>
-
-                               <div class="col-md-6 mb-4 pb-2">
-                    <div data-mdb-input-init class="form-outline">
-                      <input data-mdb-ripple-init class="btn btn-lg btn-custom account-type"  value="Вече имам профил" />
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="file" id="cv" class="form-control form-control-lg" />
+                      <label class="form-label" for="cv">Прикачете CV*</label>
                     </div>
                   </div>
+                </div>
 
-
-      
+                <div class="row mt-4">
+                  <div class="col-md-6 mb-4">
+                    <button type="submit" class="btn btn-custom btn-lg w-100">Регистриране</button>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <button type="button" class="btn btn-outline-secondary btn-lg w-100">Вече имам профил</button>
+                  </div>
+                </div>
 
               </form>
-
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
 
 <script>
 function formatDate(input) {

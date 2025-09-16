@@ -24,7 +24,7 @@
                                 <div class="d-grid gap-3 mt-4 pt-2">
                                     <p href="#" class="selection-box-label">ВИЕ СТЕ?</p>
                                     <input data-mdb-ripple-init class="btn btn-lg btn-custom account-type" id = "user" onclick="checkDevice()" value="Потребител" />
-                                    <input data-mdb-ripple-init class="btn btn-lg btn-custom account-type"  value="Работодател" />
+                                    <input data-mdb-ripple-init class="btn btn-lg btn-custom account-type" id="employer" onclick="checkDevice()" value="Работодател" />
                                     <input data-mdb-ripple-init class="btn btn-lg btn-custom account-type"  value="Институция" />
                                 </div>
                             </form>
@@ -45,6 +45,18 @@
                 // Пренасочване към десктоп версията
                 window.location.href = 'usersignup-pc.html';
         }
+
+
+        function checkDeviceEmployer() {
+            // Проверка на ширината на екрана
+            if (window.innerWidth <= 768) {
+                // Пренасочване към мобилната версия
+                window.location.href = 'employersignup-mobile.html';
+            } else {
+                // Пренасочване към десктоп версията
+                window.location.href = 'employersignup-pc.html';
+        }
+    }
     }
     </script>
 </body>

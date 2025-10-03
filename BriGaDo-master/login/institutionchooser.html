@@ -22,10 +22,10 @@
                                     </div>
                                 </div>
                                 <div class="d-grid gap-3 mt-4 pt-2">
-                                    <p href="#" class="selection-box-label">ВИЕ СТЕ?</p>
-                                    <input data-mdb-ripple-init class="btn btn-lg btn-custom account-type" id = "user" onclick="checkDevice()" value="Потребител" />
-                                    <input data-mdb-ripple-init class="btn btn-lg btn-custom account-type" id="employer" onclick="checkDeviceEmployer()" value="Работодател" />
-                                    <input data-mdb-ripple-init class="btn btn-lg btn-custom account-type"  value="Институция" onclick="window.location.href='./institutionchooser.html' "  " value="Институция"/>
+                                    <p href="#" class="selection-box-label">ВКАКЪВ ВИД ИНСТИТУЦИЯ СТЕ?</p>
+                                    <input data-mdb-ripple-init class="btn btn-lg btn-custom account-type" id = "user" onclick="checkDeviceUni()" value="Университет" />
+                                    <input data-mdb-ripple-init class="btn btn-lg btn-custom account-type"  onclick="checkDeviceSchool()" value="Училище" />
+                                    <input data-mdb-ripple-init class="btn btn-lg btn-custom account-type"  onclick="checkDeviceMunicipality()" value="Община"/>
                                 </div>
                             </form>
                         </div>
@@ -36,28 +36,39 @@
     </section>
 
     <script>
-        function checkDevice() {
+        function checkDeviceUni() {
             // Проверка на ширината на екрана
             if (window.innerWidth <= 768) {
                 // Пренасочване към мобилната версия
-                window.location.href = 'usersignup-mobile.html';
+                window.location.href = 'university-signup-mobile.html';
             } else {
                 // Пренасочване към десктоп версията
-                window.location.href = 'usersignup-pc.html';
+                window.location.href = 'university-signup-pc.html';
+            }
         }
 
 
-        function checkDeviceEmployer() {
+        function checkDeviceSchool() {
             // Проверка на ширината на екрана
             if (window.innerWidth <= 768) {
                 // Пренасочване към мобилната версия
-                window.location.href = 'employersignup-mobile.html';
+                window.location.href = 'school-signup-mobile.html';
             } else {
                 // Пренасочване към десктоп версията
-                window.location.href = 'employersignup-pc.html';
+                window.location.href = 'school-signup-pc.html';
+            }
         }
-    }
-    }
+
+         function checkDeviceMunicipality() {
+            // Проверка на ширината на екрана
+            if (window.innerWidth <= 768) {
+                // Пренасочване към мобилната версия
+                window.location.href = 'school-signup-mobile.html';
+            } else {
+                // Пренасочване към десктоп версията
+                window.location.href = 'municipality-signup-pc.html';
+            }
+        }
     </script>
 </body>
 </html>

@@ -60,6 +60,10 @@
     border: none !important;
 }
 
+.card{
+    max-height: 350px;
+}
+
 #see-more{
  align-items: center;
  color: white;

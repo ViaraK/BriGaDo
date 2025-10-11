@@ -60,6 +60,12 @@
     border: none !important;
 }
 
+
+.btn-custom-red{
+    background-color: #95191a !important;
+    border: none !important;
+}
+
 .card{
     max-height: 350px;
 }
@@ -68,4 +74,8 @@
  align-items: center;
  color: white;
  font-size: 20px;
+}
+
+.hidden-row {
+  display: none !important;
 }

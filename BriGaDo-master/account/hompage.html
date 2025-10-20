@@ -8,7 +8,7 @@
 
   <!-- Външни CSS (пазим твоите файлове както са) -->
   <link rel="stylesheet" href="../styles.css" />
-  <link rel="stylesheet" href="./account test.css" />
+  <link rel="stylesheet" href="../css/account test.css" />
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -80,20 +80,31 @@
     </div>
   </nav>
 
-  <div class="linkbar d-flex justify-content-center align-items-center">
+  <div class="linkbar d-flex justify-content-center align-items-center" id="linkbar">
+  <a href="https://example.com" class="text-decoration-none">
     <div class="box">
       <p>Намери бригада</p>
     </div>
+  </a>
+
+  <a href="https://example.com/work" class="text-decoration-none">
     <div class="box">
       <p>Намери работа</p>
     </div>
+  </a>
+
+  <a href="https://example.com/internship" class="text-decoration-none">
     <div class="box">
       <p>Намери стаж</p>
     </div>
-  </div>
+  </a>
+</div>
+
 
 <div class="container">
-  <h2>Последно разглеждани обяви</h2>
+  <div class="row w-100 justify-content-center text-center">
+  <h2> Последно разглеждани обяви</h2>
+  </div>
   <ul class="cards">
       <div class="card" style="width: 18rem; margin-left: 10px;">
       <img src="https://evroto.bg/upload/417/zx860y484_4573731.jpg?w=900" class="card-img-top" alt="...">
@@ -155,7 +166,9 @@
 
 
 <div class="container">
-  <h2>Запазени обяви</h2>
+    <div class="row w-100 justify-content-center text-center">
+  <h2> Запазени обяви</h2>
+  </div>
   <ul class="cards">
       <div class="card" style="width: 18rem; margin-left: 10px;">
       <img src="https://evroto.bg/upload/417/zx860y484_4573731.jpg?w=900" class="card-img-top" alt="...">

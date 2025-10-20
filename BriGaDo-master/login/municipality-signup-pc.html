@@ -67,38 +67,6 @@
                 </div>
 
 
-                <!-- Дата на раждане и роля -->
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-                    <div class="form-outline">
-                                <label class="form-label" for="birthdate">Рожденна дата*</label>
-                      <input 
-                        type="text" 
-                        id="birthdate" 
-                        class="form-control form-control-lg" 
-                        maxlength="10" 
-                        oninput="formatDate(this)" 
-                        placeholder="дд/мм/гггг"
-                        required 
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <div class="form-outline">
-                      <label class="form-label" for="roleSelect">Аз съм:*</label>
-                      <select id="roleSelect" class="form-select form-select-lg" required>
-                        <option value="">-- Изберете роля --</option>
-                        <option value="Кмет">Кмет</option>
-                        <option value="Зам-кмет">Заместник-кмет</option>
-                        <option value="PR специалист">PR специалист</option>
-                        <option value="Общинар">Представител на общински съвет</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Име и фамилия -->
-  
                 <!-- Потребителско име и парола -->
                 <div class="row">
                   <div class="col-md-6 mb-4">
@@ -126,6 +94,37 @@
                     <div class="form-outline">
                       <label class="form-label" for="phone">Служебен телефон*</label>
                       <input type="number" id="phone" class="form-control form-control-lg" required minlength="6" />
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Дата на раждане и роля -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                                <label class="form-label" for="birthdate">Рожденна дата*</label>
+                      <input 
+                        type="text" 
+                        id="birthdate" 
+                        class="form-control form-control-lg" 
+                        maxlength="10" 
+                        oninput="formatDate(this)" 
+                        placeholder="дд/мм/гггг"
+                        required 
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <label class="form-label" for="roleSelect">Аз съм:*</label>
+                      <select id="roleSelect" class="form-select form-select-lg" required>
+                        <option value="">-- Изберете роля --</option>
+                        <option value="Кмет">Кмет</option>
+                        <option value="Зам-кмет">Заместник-кмет</option>
+                        <option value="PR специалист">PR специалист</option>
+                        <option value="Общинар">Представител на общински съвет</option>
+                      </select>
                     </div>
                   </div>
                 </div>

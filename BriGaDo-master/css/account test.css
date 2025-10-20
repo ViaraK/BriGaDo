@@ -11,7 +11,7 @@
     padding-left: 30px;
     padding-right: 30px;
     height: 80px;
-    width: 240px;
+    min-width: 200px;
     background-color: white;
     border-radius: 5px;
     margin: 20px;
@@ -97,7 +97,6 @@ h2 {
   font-size: 20px ;
   margin-bottom: 1em;
   color: var(--white) !important;
-  margin-left: 50vw;
 }
 
 .cards {
@@ -203,4 +202,10 @@ h2 {
   h2 {
     font-size: 12px !important;
   } 
+}
+
+@media (max-width: 768px){
+#linkbar{
+  flex-direction: column;
+}
 }

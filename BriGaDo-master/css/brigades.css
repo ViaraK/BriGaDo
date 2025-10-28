@@ -1,64 +1,137 @@
-/* Контейнерът за двете червени кутии */
-#selector {
+#selection{
+  background-color: #055a30;
+ display: flex;
+ margin-top: 100px;
+ height: 190px;
+
+}
+
+.footer{
+  margin-top: 350px;
+}
+.box{
+  align-content: center;
   display: flex;
-  flex-direction: row; /* една до друга на компютър */
-  justify-content: center;
-  align-items: center;
-  gap: 30px; /* разстояние между кутиите */
-  margin-top: 150px;
-  margin-bottom: 100px;
-}
-
-/* Всяка кутия */
-.box {
-  width: 300px;
-  text-align: center;
   border-radius: 20px;
-  transition: transform 0.3s ease;
+}
+.red {
+  background: white !important;
 }
 
-.box:hover {
-  transform: scale(1.05);
+.green{
+  background-color: white !important; 
 }
 
 .box p {
-  color: white !important;
-  margin: 0;
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-
-/* Зелената кутия под тях */
-#transient {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 600px;
-  background-color: #055a30 !important; 
+  font-size: 1rem;
   color: white;
-  border: 2px solid white;
-  border-radius: 25px;
-  padding: 20px;
-  text-align: center;
+  line-height: 30px;
+  align-self: center;
+  align-self: center;
+  margin-bottom: -5px;
 }
 
-/* --- Responsive настройки --- */
-@media (max-width: 768px) {
-  #selector {
-    flex-direction: column; /* една под друга на телефон */
-    gap: 20px;
-    margin-top: 100px;
-    margin-bottom: 60px;
+.bottom-text p{
+  margin-top: 20px;
+  font-size: 1.2rem;
+  
+  
+}
+
+#selection-bottom{
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  height: 60px;
+  margin-top: -95px;
+  border-radius: 20px;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #055a30;
+}
+
+
+#selection-year{
+  width: 100%;
+  position: absolute;
+  height: 60px;
+  z-index: 20;
+  margin-top: -25px;
+  background-color: #055a30;
+}
+
+@media (max-width:400px){
+  .box p {
+    font-size: 0.8rem;
   }
 
-  .box {
-    width: 90%;
+  #selection-bottom{
+  min-width: 100vw !important;
+  position: absolute;
+  left: 0;
+}
+
+}
+
+@media (max-width:1000px){
+ .box{
+  margin-top: 0px;
+ }
+
+ #box2{
+  margin-top: 5px;
+ }
+
+
+.bottom-text p{
+  font-size: 1rem;
+  line-height: 20px;
+  margin-top: -5px;
+  
+}
+
+
+}
+
+@media (max-width: 700px) {
+
+  #selection{
+    height: 250px !important;
+  }
+  
+.bottom-text p{
+  font-size: 0.9rem;
+  line-height: 20px;
+  margin-top: -5px;
+  
+}
+
+
+  #selection-bottom{
+  min-width: 100vw !important;
+  position: absolute;
+  left: 0;
+}
+
+
+}
+
+@media (min-width:768px){
+  .box{ 
+    max-height: 100px;
   }
 
-  #transient {
-    width: 90%;
-    font-size: 0.95rem;
-    margin-top: 20px;
+}
+
+@media (min-width:1000px){
+  .box p{
+    font-size: 0.7rem !important;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  #selection{
+    height: 250px !important;
   }
 }

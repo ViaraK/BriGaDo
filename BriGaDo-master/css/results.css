@@ -14,7 +14,7 @@
     margin-bottom: 0px;
     font-weight: bolder;
     margin-left: 10px ;
-      font-size: 40px !important;
+      font-size: 35px !important;
 }
 
 .criterion {
@@ -45,9 +45,59 @@
 
     }
 
-    #job-title p {
+    #job-title {
     margin-bottom: 0px;
     line-height: 20px !important;
+    font-size: 15px !important;
+}
+
+}
+
+/* Основен стил — хоризонтално подравняване */
+
+
+#selection .criterion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+#selection img {
+  margin: 0;
+}
+
+#selection .criterion {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+/* На мобилен: вертикален списък */
+@media (max-width: 768px) {
+  #selection .container-fluid {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  #selection .criterion-item {
+    margin-bottom: 20px;
+  }
+  #selection .criterion {
+    font-size: 1.2em;
+  }
+
+  #selection img {
+    height: 64px;
+    width: 64px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+    
+  #selection {
+    max-height: 950px !important;
+    height: 950px !important;
 }
 
 }

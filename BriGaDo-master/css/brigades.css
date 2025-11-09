@@ -178,7 +178,7 @@ input {
  }
 
 #selection {
-  min-height: 450px !important;
+  min-height: 450px;
 }
 
 
@@ -194,9 +194,7 @@ input {
 
 @media (max-width: 700px) {
 
-  #selection{
-    height: 250px !important;
-  }
+  
 
    .sector{
     max-width: 320px;
@@ -287,7 +285,7 @@ input {
   }
 
   #selection{
-    height: 650px !important;
+    height: 700px !important;
   }
 
   #trade #hygiene {

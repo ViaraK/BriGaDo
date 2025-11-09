@@ -1,0 +1,45 @@
+.btn{
+    background-color: white !important;
+}
+
+.btn-selected {
+    background-color: #006400;
+    height: 47px;
+    border-style: none;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 7.5px;
+    padding-top: 7.5px;
+}
+
+#prev {
+    background: none !important;
+    color: white;
+}
+
+
+
+#next {
+    background: none !important;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 350px) {
+
+    #selection{
+                  max-height: 750px !important;
+            min-height: 750px !important;
+    }
+
+}
+
+  @media screen and  (max-width:600px) {
+        #selection{
+            max-height: 550px !important;
+            min-height: 550px !important;
+        }
+    }
+

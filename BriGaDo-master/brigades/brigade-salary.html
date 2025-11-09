@@ -7,7 +7,7 @@
 
   <!-- CSS файл -->
   <link rel="stylesheet" href="../styles.css" />
-  <link rel="stylesheet" href="../css/year.css"/>
+  <link rel="stylesheet" href="../css/salary.css" />
   <link rel="stylesheet" href="../css/account test.css" />
   <link rel="stylesheet" href="../css/brigades.css" />
 
@@ -68,82 +68,94 @@
 
 
 
-  <nav class="navbar navbar-expand-lg navbar-gradient " id="selection-year">
     <div class="container-fluid d-flex align-items-center justify-content-between">
+  
     <div class="navbar-collapse" id="navbarSupportedContent">
         <div class="w-100 d-flex flex-column flex-lg-row align-items-center justify-content-center">
           <!-- Center: Navbar links -->
           <ul class="navbar-nav mb-2 mb-lg-0 ">
             <li class="nav-item active">
 
-            <div class="bottom-text">
-              <p>Изберете период за бригада</p>
-            </div>
-  
         </li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
+<nav class="top-text">
+  <p class="text-white mb-3 fs-5 text-center" style="margin-bottom: 10px !important; height: 80px;">Какво заплащане очакваш месечно?</p>
+  </nav>
+<nav class="navbar navbar-expand-lg navbar-gradient" id="selection" style="height: 400px;">
 
+  <div class="container-fluid d-flex align-items-center justify-content-center">
 
-  <nav class="navbar navbar-expand-lg navbar-gradient " id="selection">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
-      
-      <!-- Left: Social Icons -->
-      
-      
-      <!-- Toggler for mobile -->
-    
-      <button class="prevButton" onclick="goPrevious()">
-          <div>
-            <
-          </div>
-          </button>
-      <!-- Center and Right: Collapsible content -->
-      <div class="navbar-collapse" id="navbarSupportedContent">
-        <div class="w-100 d-flex flex-column flex-lg-row align-items-center justify-content-center">
-          <!-- Center: Navbar links -->
-          <ul class="navbar-nav mb-2 mb-lg-0 center-text-custom">
-            <li class="nav-item active">
-          <a href="#" id="box1">
-            <div class="box green" style="max-width: 300px !important;">
-              <button class="nextButton year" onclick="event.preventDefault(); goNext();">
-              <p class="year-text">Зима 2025</p>
-              </button>
-            </div>
-          </a>
-        </li>
-            <li class="nav-item">
-             <a href="#" id="box2">
-            <div class="box green" style="max-width: 300px;">
-              <button class="nextButton year" onclick="event.preventDefault(); goNext();">
-              <p class="year-text">Лято 2026</p>
-              </button>
-            </div>
-          </a>
-            </li>
-          
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
+    <div class="navbar-collapse" id="navbarSupportedContent">
+    <!-- Заплати --> 
+      <div class="w-100 d-flex flex-column flex-lg-row align-items-left justify-content-center gap-3">
         
-          <div>
-            <button onclick="goNext()" class="nextButton">
-            >
-            </button>
-          </div>
-  </nav>
+
+        <div class="position-relative">
+                  <button class="btn red sector" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Под 1000лв.
+          </button>
+
+          <button class="btn red sector" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 10px; margin-bottom: 10px;" id="hygiene">
+            От 1000лв до 1500лв
+          </button>
+
+      <div class="w-100 d-flex flex-column flex-lg-row align-items-left justify-content-left gap-3" style="margin-top: 10px;">
+        
 
 
-  <!-- Main content would go here -->
-  <main>
-    <!-- Add your main content here -->
-  </main>
+        <div class="position-relative">
+    <button class="btn red sector" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 10px;"  id="tourism">
+            От 1500лв до 2000лв
+          </button>
+
+
+          <button class="btn red sector" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-bottom: -10px;">
+            От 2000лв до 2500лв
+        </button>
+      </div>
+      
+      </div>
+
+
+      <div class="w-100 d-flex flex-column flex-lg-row align-items-left justify-content-left gap-3" style="margin-top: 10px;">
+        
+        <div class="position-relative">
+    <button class="btn red sector" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 20px;">
+        от 2500лв до 3000лв
+          </button>
+
+
+          <button class="btn red sector" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 20px;">
+            от 3000лв до 3500лв
+        </button>
+      </div>
+      </div>
+        <div class="position-relative">
+        <div class="nav-row">
+    <button class="btn sector next" type="button" data-bs-toggle="dropdown" aria-expanded="false"   id="tourism" id="next">
+        <
+          </button>
+
+          <button class="btn  sector prev" type="button" data-bs-toggle="dropdown" aria-expanded="false"  id="prev">
+        >
+        </button>
+        </div>
+      </div>
+      </div>
+
+   
+   
+    </div>
+   <!-- Край на заплати -->
+  </div>
+</nav>
+
+
+
 
   <!-- Footer -->
   <div class="footer">
@@ -192,7 +204,16 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/brigade-order.js"></script>
+  <script>
+    document.querySelectorAll("button.sector").forEach(btn => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault(); // предотвратява евентуално действие от Bootstrap dropdown
+    console.log(`[DEBUG] Натиснат бутон: ${btn.innerText.trim()}`);
+    goNext();
+  });
+});
+
+  </script>
   <script>
 let progress = JSON.parse(localStorage.getItem("brigadeProgress")) || null;
 
@@ -241,6 +262,5 @@ function goPrevious() {
   }
 }
 </script>
-
 </body>
 </html>

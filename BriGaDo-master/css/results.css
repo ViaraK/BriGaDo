@@ -1,0 +1,53 @@
+#selection {
+    max-height: 250px !important;
+    height: 250px !important;
+}
+
+.critera-filled { 
+    z-index: 100;
+    margin-left: 10px;
+    margin-top: -40px;
+    font-size: 1.5em !important;
+}
+
+#job-title {
+    margin-bottom: 0px;
+    font-weight: bolder;
+    margin-left: 10px ;
+      font-size: 40px !important;
+}
+
+.criterion {
+    font-size: 2em;
+    color: white;
+    margin-left: 10px;
+    margin-right:60px;
+    margin-top: -140px;
+}
+
+#selection img {
+    margin-top: -160px;
+}
+
+.top-text p {
+  font-size: 40px ;
+  color: white;
+}
+
+.top-text{
+    padding-bottom: 30px;
+}
+
+
+@media screen and (max-width:400px) {
+    .critera-filled {
+        font-size: 10px !important;
+
+    }
+
+    #job-title p {
+    margin-bottom: 0px;
+    line-height: 20px !important;
+}
+
+}

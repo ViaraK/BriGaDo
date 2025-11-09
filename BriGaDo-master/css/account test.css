@@ -21,7 +21,7 @@
 .box p{
     color: black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px !important; 
     line-height: 80px;
 }
 

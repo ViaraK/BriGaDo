@@ -1,0 +1,103 @@
+#selection {
+    max-height: 250px !important;
+    height: 250px !important;
+}
+
+.critera-filled { 
+    z-index: 100;
+    margin-left: 10px;
+    margin-top: -40px;
+    font-size: 1.5em !important;
+}
+
+#job-title {
+    margin-bottom: 0px;
+    font-weight: bolder;
+    margin-left: 10px ;
+      font-size: 35px !important;
+}
+
+.criterion {
+    font-size: 2em;
+    color: white;
+    margin-left: 10px;
+    margin-right:60px;
+    margin-top: -140px;
+}
+
+#selection img {
+    margin-top: -160px;
+}
+
+.top-text p {
+  font-size: 40px ;
+  color: white;
+}
+
+.top-text{
+    padding-bottom: 30px;
+}
+
+
+@media screen and (max-width:400px) {
+    .critera-filled {
+        font-size: 10px !important;
+
+    }
+
+    #job-title {
+    margin-bottom: 0px;
+    line-height: 20px !important;
+    font-size: 15px !important;
+}
+
+}
+
+/* Основен стил — хоризонтално подравняване */
+
+
+#selection .criterion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+#selection img {
+  margin: 0;
+}
+
+#selection .criterion {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+/* На мобилен: вертикален списък */
+@media (max-width: 768px) {
+  #selection .container-fluid {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  #selection .criterion-item {
+    margin-bottom: 20px;
+  }
+  #selection .criterion {
+    font-size: 1.2em;
+  }
+
+  #selection img {
+    height: 64px;
+    width: 64px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+    
+  #selection {
+    max-height: 950px !important;
+    height: 950px !important;
+}
+
+}

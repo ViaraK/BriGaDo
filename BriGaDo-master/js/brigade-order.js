@@ -134,4 +134,75 @@
 }   
     
     
+<<<<<<< HEAD
 }})();
+=======
+  }
+
+  const pages = {
+  period: "../brigades/brigade-year.html",
+  salary: "../brigades/brigade-salary.html",
+  location: "../brigades/brigade-location.html",
+  sector: "../brigades/brigade-sector.html"
+};
+
+// Това ще пази състоянието
+let progress = {
+  importantThings: [],
+  currentStep: 0,
+  completed: {
+    period: false,
+    salary: false,
+    location: false,
+    sector: false
+  }
+};
+
+function proceedToSite(importantThings) {
+  progress.importantThings = importantThings;
+  progress.currentStep = 0;
+
+  // Запази напредъка в localStorage, за да е достъпен и на другите страници
+  localStorage.setItem("brigadeProgress", JSON.stringify(progress));
+
+  console.log(`[INFO] Стартирам навигацията: ${importantThings.join(', ')}`);
+  goToCurrentPage();
+}
+
+// Зарежда текущата страница
+function goToCurrentPage() {
+  const currentId = progress.importantThings[progress.currentStep];
+  const targetUrl = pages[currentId];
+  if (!targetUrl) {
+    console.error(`[ERROR] Няма път за ${currentId}`);
+    return;
+  }
+
+  console.log(`[INFO] Пренасочване към: ${targetUrl}`);
+  window.location.href = targetUrl; // ще пренасочи към правилната страница
+}
+
+// Извиква се от бутоните „<“ и „>“
+function goNext() {
+  const curr = progress.importantThings[progress.currentStep];
+  progress.completed[curr] = true;
+
+  if (progress.currentStep < progress.importantThings.length - 1) {
+    progress.currentStep++;
+    goToCurrentPage();
+  } else {
+    console.log("[INFO] Всички стъпки завършени!");
+    // тук можеш да направиш финална страница
+  }
+}
+
+function goPrevious() {
+  if (progress.currentStep > 0) {
+    progress.currentStep--;
+    goToCurrentPage();
+  }
+}
+
+  
+})();
+>>>>>>> 228f494da240a0b0aed6724a6300628a2fd09d45

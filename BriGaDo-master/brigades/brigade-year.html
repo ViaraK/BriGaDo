@@ -194,54 +194,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/brigade-order.js"></script>
-  <script>
-let progress = JSON.parse(localStorage.getItem("brigadeProgress")) || null;
-
-if (!progress) {
-  console.warn("[WARN] Няма намерен progress – връщам се назад.");
-  window.location.href = "../index.html";
-}
-
-const pages = {
-  period: "../brigades/brigade-year.html",
-  salary: "../brigades/brigade-salary.html",
-  location: "../brigades/brigade-location.html",
-  sector: "../brigades/brigade-sector.html"
-};
-
-function goToCurrentPage() {
-  const currentId = progress.importantThings[progress.currentStep];
-  const targetUrl = pages[currentId];
-  if (!targetUrl) {
-    console.error(`[ERROR] Няма път за ${currentId}`);
-    return;
-  }
-
-  console.log(`[INFO] Навигация към: ${targetUrl}`);
-  window.location.href = targetUrl;
-}
-
-function goNext() {
-  const curr = progress.importantThings[progress.currentStep];
-  progress.completed[curr] = true;
-
-  if (progress.currentStep < progress.importantThings.length - 1) {
-    progress.currentStep++;
-    localStorage.setItem("brigadeProgress", JSON.stringify(progress));
-    goToCurrentPage();
-  } else {
-    console.log("[INFO] Всички стъпки завършени!");
-  }
-}
-
-function goPrevious() {
-  if (progress.currentStep > 0) {
-    progress.currentStep--;
-    localStorage.setItem("brigadeProgress", JSON.stringify(progress));
-    goToCurrentPage();
-  }
-}
-</script>
 
 </body>
 </html>

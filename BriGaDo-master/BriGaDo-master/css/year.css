@@ -1,0 +1,20 @@
+    #box1 {
+        max-width: 300px !important;
+        width: 300px !important;
+    }
+
+        #box2 {
+        max-width: 300px !important;
+        width: 300px !important;
+    }
+
+@media screen and (max-width:600px) {
+    .year-text{
+    margin-right: 100px;
+}
+}
+
+
+    .year-text p{
+    font-size: 30px;
+}

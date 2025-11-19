@@ -1,0 +1,115 @@
+CREATE DATABASE IF NOT EXISTS BriGaDo
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
+
+USE BriGaDo;
+
+CREATE TABLE users (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    phone_number VARCHAR(20),
+    sex ENUM('MALE','FEMALE','OTHER'),
+    birthday DATE,
+    linkedin_link VARCHAR(255),
+    cv_file_path VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE firm_profiles (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    firm_email VARCHAR(150) NOT NULL UNIQUE,
+    company_name VARCHAR(255) NOT NULL UNIQUE,
+    bulstat_or_eik VARCHAR(15) NOT NULL UNIQUE,
+    head_office VARCHAR(255),
+    phone_number VARCHAR(20) NOT NULL,
+    company_email VARCHAR(255),
+    registrant_email VARCHAR(255),
+    website VARCHAR(255),
+    activity_type VARCHAR(255),
+    logo_path VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE job_postings (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    firm_id BIGINT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    location VARCHAR(150) NOT NULL,
+    job_type ENUM('INTERNSHIP','BRIGADE','FULL_TIME','PART_TIME') NOT NULL,
+    salary_min DECIMAL(10,2),
+    salary_max DECIMAL(10,2),
+    start_date DATE,
+    end_date DATE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (firm_id) REFERENCES firm_profiles(id) ON DELETE CASCADE
+);
+
+CREATE TABLE saved_jobs (
+    user_id BIGINT NOT NULL,
+    job_id BIGINT NOT NULL,
+    saved_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(user_id, job_id),
+    FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY(job_id) REFERENCES job_postings(id) ON DELETE CASCADE
+);
+
+CREATE TABLE view_history (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    user_id BIGINT NOT NULL,
+    job_id BIGINT NOT NULL,
+    viewed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY(job_id) REFERENCES job_postings(id) ON DELETE CASCADE
+);
+
+
+CREATE TABLE job_preferences (
+    user_id BIGINT PRIMARY KEY,
+    preferred_location VARCHAR(150),
+    preferred_job_type VARCHAR(255),
+    min_salary DECIMAL(10,2),
+    max_salary DECIMAL(10,2),
+
+    preferred_start_date DATE,
+    preferred_end_date DATE,
+
+    importance_location TINYINT NOT NULL,
+    importance_job_type TINYINT NOT NULL,
+    importance_salary TINYINT NOT NULL,
+    importance_timeframe TINYINT NOT NULL,
+
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+
+    CHECK (importance_location BETWEEN 1 AND 4),
+    CHECK (importance_job_type BETWEEN 1 AND 4),
+    CHECK (importance_salary BETWEEN 1 AND 4),
+    CHECK (importance_timeframe BETWEEN 1 AND 4),
+
+    CHECK (importance_location <> importance_job_type),
+    CHECK (importance_location <> importance_salary),
+    CHECK (importance_location <> importance_timeframe),
+    CHECK (importance_job_type <> importance_salary),
+    CHECK (importance_job_type <> importance_timeframe),
+    CHECK (importance_salary <> importance_timeframe)
+);
+
+
+CREATE TABLE matching_results (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    user_id BIGINT NOT NULL,
+    job_id BIGINT NOT NULL,
+    score DECIMAL(5,2) NOT NULL,
+    matched_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY(job_id) REFERENCES job_postings(id) ON DELETE CASCADE
+);

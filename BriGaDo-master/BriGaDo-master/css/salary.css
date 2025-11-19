@@ -1,0 +1,17 @@
+
+    @media screen and  (max-width:600px) {
+        #selection{
+            max-height: 450px !important;
+            min-height: 400px !important;
+        }
+    }
+
+
+    @media screen and  (max-width:350px) {
+        #selection{
+            max-height: 350px !important;
+            min-height: 300px !important;
+            height: 300px;
+        }
+
+    }

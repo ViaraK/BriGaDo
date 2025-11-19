@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BriGaDo</title>
+    <!--^ Тука си избираш местоположенията-->
+
+
+  <!-- CSS файл -->
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../css/account test.css" />
+  <link rel="stylesheet" href="../css/brigades.css" />
+   <link rel="stylesheet" href="../css/location.css" /> 
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome за иконите -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <style>
+   
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-gradient">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      
+      <!-- Left: Social Icons -->
+      <div class="d-flex align-items-center">
+        <a class="nav-link" href="https://www.linkedin.com/in/brigado-71570735a"><i class="fab fa-linkedin social-icons"></i></a>
+        <a class="nav-link" href="https://www.facebook.com/share/18iTUUx4EN/"><i class="fab fa-facebook social-icons"></i></a>
+        <a class="nav-link" href="https://www.tiktok.com/@brigado_bulgaria"><i class="fab fa-tiktok social-icons"></i></a>
+        <a class="nav-link" href="https://www.instagram.com/bri_ga_doo/"><i class="fab fa-instagram social-icons"></i></a>
+      </div>
+      
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Center and Right: Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="w-100 d-flex flex-column flex-lg-row align-items-center justify-content-center">
+          <!-- Center: Navbar links -->
+          <ul class="navbar-nav mb-2 mb-lg-0 center-text-custom">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Начална страница</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">За нас</a>
+            </li>
+          
+              <li class="nav-item"><a class="nav-link" href="#">Бригада</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Работа</a> </li>
+              <li class="nav-item"><a class="nav-link" href="#">Стаж</a> </li>
+          </ul>
+  
+          <!-- Right: Auth Buttons -->
+          <div class="d-flex ms-lg-auto mt-2 mt-lg-0">
+            <a href="./login/userlogin.html" class="btn primary me-2">Login</a>
+            <a href="./login/usertype.html" class="btn btn-light" style="color: black;">Signup</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+  
+    <div class="navbar-collapse" id="navbarSupportedContent">
+        <div class="w-100 d-flex flex-column flex-lg-row align-items-center justify-content-center">
+          <!-- Center: Navbar links -->
+          <ul class="navbar-nav mb-2 mb-lg-0 ">
+            <li class="nav-item active">
+
+        </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+<nav class=" top-text-loc">
+  <p class="text-white mb-3 fs-5 text-center">Изберете област на месторабота</p>
+  </nav>
+<nav class="navbar navbar-expand-lg navbar-gradient" id="selection">
+
+  <div class="container-fluid d-flex align-items-center justify-content-center">
+
+    <div class="navbar-collapse" id="navbarSupportedContent">
+
+      <div class="w-100 d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3">
+        
+
+        <!-- Търсачка -->
+        <div class="position-relative">
+          <input type="text" class="form-control" placeholder="Въведете област" aria-label="Username" id="city-input" autocomplete="off" style="width: 250px;">
+          <div id="autocomplete-list" class="list-group position-absolute" style="z-index: 1000; max-height: 200px; overflow-y: auto; width: 100%;"></div>
+        </div>
+
+        <!-- Dropdown за избрани области -->
+        <div class="dropdown">
+          <button class="btn dropdown-toggle red" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Изберете област
+          </button>
+          <ul class="dropdown-menu scrollable-dropdown">
+            <li><a class="dropdown-item" href="#">Благоевград</a></li>
+            <li><a class="dropdown-item" href="#">Бургас</a></li>
+            <li><a class="dropdown-item" href="#">Варна</a></li>
+            <li><a class="dropdown-item" href="#">Велико Търново</a></li>
+            <li><a class="dropdown-item" href="#">Видин</a></li>
+            <li><a class="dropdown-item" href="#">Враца</a></li>
+            <li><a class="dropdown-item" href="#">Габрово</a></li>
+            <li><a class="dropdown-item" href="#">Добрич</a></li>
+            <li><a class="dropdown-item" href="#">Кърджали</a></li>
+            <li><a class="dropdown-item" href="#">Кюстендил</a></li>
+            <li><a class="dropdown-item" href="#">Ловеч</a></li>
+            <li><a class="dropdown-item" href="#">Монтана</a></li>
+            <li><a class="dropdown-item" href="#">Пазарджик</a></li>
+            <li><a class="dropdown-item" href="#">Перник</a></li>
+            <li><a class="dropdown-item" href="#">Плевен</a></li>
+            <li><a class="dropdown-item" href="#">Пловдив</a></li>
+            <li><a class="dropdown-item" href="#">Разград</a></li>
+            <li><a class="dropdown-item" href="#">Русе</a></li>
+            <li><a class="dropdown-item" href="#">Силистра</a></li>
+            <li><a class="dropdown-item" href="#">Сливен</a></li>
+            <li><a class="dropdown-item" href="#">Смолян</a></li>
+            <li><a class="dropdown-item" href="#">София</a></li>
+            <li><a class="dropdown-item" href="#">София (област)</a></li>
+            <li><a class="dropdown-item" href="#">Стара Загора</a></li>
+            <li><a class="dropdown-item" href="#">Търговище</a></li>
+            <li><a class="dropdown-item" href="#">Хасково</a></li>
+            <li><a class="dropdown-item" href="#">Шумен</a></li>
+            <li><a class="dropdown-item" href="#">Ямбол</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+  <button class="btn dropdown-toggle red" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Избрани области
+  </button>
+  <ul id="selected-cities" class="dropdown-menu scrollable-dropdown selected-cities">
+  </ul>
+  
+</div>
+
+          <div>
+            <button onclick="goNext()" class="nextButton red btn">
+            Потвърди
+            </button>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<script>
+const cities = [
+  "Благоевград", "Бургас", "Варна", "Велико Търново", "Видин", "Враца", "Габрово", "Добрич",
+  "Кърджали", "Кюстендил", "Ловеч", "Монтана", "Пазарджик", "Перник", "Плевен", "Пловдив",
+  "Разград", "Русе", "Силистра", "Сливен", "Смолян", "София", "София (област)",
+  "Стара Загора", "Търговище", "Хасково", "Шумен", "Ямбол"
+];
+
+const input = document.getElementById("city-input");
+const list = document.getElementById("autocomplete-list");
+
+input.addEventListener("input", () => {
+  const value = input.value.trim();
+  list.innerHTML = ""; // изчистваме старите предложения
+  
+  if (value.length === 0) return;
+
+  const regex = new RegExp("^" + value, "i"); // започва с value (case-insensitive)
+  const matches = cities.filter(city => regex.test(city));
+
+  matches.forEach(city => {
+    const item = document.createElement("div");
+    item.className = "list-group-item list-group-item-action";
+    item.textContent = city;
+    item.addEventListener("click", () => {
+      input.value = city;
+      list.innerHTML = "";
+    });
+    list.appendChild(item);
+  });
+});
+
+// Скриване на списъка, ако се кликне извън него
+document.addEventListener("click", (e) => {
+  if (!list.contains(e.target) && e.target !== input) {
+    list.innerHTML = "";
+  }
+});
+</script>
+
+<script>
+const selectedDropdown = document.getElementById("selected-cities");
+
+
+const selectedCities = new Set(); // за уникални градове
+
+// Autocomplete логика
+input.addEventListener("input", () => {
+  const value = input.value.trim();
+  list.innerHTML = "";
+  
+  if (value.length === 0) return;
+
+  const regex = new RegExp("^" + value, "i");
+  const matches = cities.filter(city => regex.test(city));
+
+  matches.forEach(city => {
+    const item = document.createElement("div");
+    item.className = "list-group-item list-group-item-action selected-cities";
+    item.textContent = city;
+    item.addEventListener("click", () => {
+      addSelectedCity(city);
+      input.value = "";
+      list.innerHTML = "";
+    });
+    list.appendChild(item);
+  });
+});
+
+// Добавяне на град от autocomplete/dropdown към списъка "Избрани области"
+function addSelectedCity(city) {
+  if (selectedCities.has(city)) return; // вече добавен
+
+  selectedCities.add(city);
+  const li = document.createElement("li");
+  li.innerHTML = `
+    <div class="d-flex justify-content-between align-items-center px-3">
+      <span>${city}</span>
+      <button class="btn btn-sm btn-outline-danger ms-2 remove-city" title="Премахни">&times;</button>
+    </div>
+  `;
+  selectedDropdown.appendChild(li);
+
+  // бутон за премахване
+  li.querySelector(".remove-city").addEventListener("click", () => {
+    selectedCities.delete(city);
+    li.remove();
+  });
+}
+
+// Скриване на autocomplete при клик извън него
+document.addEventListener("click", (e) => {
+  if (!list.contains(e.target) && e.target !== input) {
+    list.innerHTML = "";
+  }
+});
+
+// Добавяне и от основния dropdown (ако имаш такъв)
+document.querySelectorAll(".dropdown-item").forEach(item => {
+  item.addEventListener("click", () => {
+    addSelectedCity(item.textContent.trim());
+  });
+});
+</script>
+
+
+
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-content">
+      <div class="useful-links">
+        <a href='#' style="font-weight: bolder;">Полезни линкове</a>
+        <a href="./useful/faq.html">ЧЗВ</a>
+        <a href="./forum/main.html">Форум</a>
+        <a href="./useful/tac.html">Общи условия</a>
+        <a href="./useful/privacy.html">Лични данни</a>
+      </div>
+      <div class="useful-links">
+        <a href="#" style="font-weight: bolder;">За нас</a>
+        <a href="./index.html#our-mission">Мисия</a>
+        <a href="./useful/whyus.html">Защо нас?</a>
+        <a href="./services.html">Услуги</a>
+        <a href="./partners.html">Партньори</a>
+      </div>
+      <div class="social-icons-footer">
+        <div class="social-item-footer">
+          <a href="https://www.linkedin.com/in/brigado-71570735a" target="_blank" style="text-decoration: none;">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <small> _ BriGaDo _</small>
+        </div>
+        <div class="social-item-footer">
+          <a href="https://www.instagram.com/bri_ga_doo/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <small> @bri_ga_doo</small>
+        </div>
+        <div class="social-item-footer">
+          <a href="https://www.facebook.com/share/18iTUUx4EN/" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <small> Brigado Bulgaria</small>
+        </div>
+        <div class="social-item-footer">
+          <a href="https://www.tiktok.com/@brigado_bulgaria" target="_blank">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <small> @brigado_bulgaria</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/brigade-order.js"></script>
+  <script>
+let progress = JSON.parse(localStorage.getItem("brigadeProgress")) || null;
+
+if (!progress) {
+  console.warn("[WARN] Няма намерен progress – връщам се назад.");
+  window.location.href = "../index.html";
+}
+
+const pages = {
+  period: "../brigades/brigade-year.html",
+  salary: "../brigades/brigade-salary.html",
+  location: "../brigades/brigade-location.html",
+  sector: "../brigades/brigade-sector.html"
+};
+
+function goToCurrentPage() {
+  const currentId = progress.importantThings[progress.currentStep];
+  const targetUrl = pages[currentId];
+  if (!targetUrl) {
+    console.error(`[ERROR] Няма път за ${currentId}`);
+    return;
+  }
+
+  console.log(`[INFO] Навигация към: ${targetUrl}`);
+  window.location.href = targetUrl;
+}
+
+function goNext() {
+  const curr = progress.importantThings[progress.currentStep];
+  progress.completed[curr] = true;
+
+  if (progress.currentStep < progress.importantThings.length - 1) {
+    progress.currentStep++;
+    localStorage.setItem("brigadeProgress", JSON.stringify(progress));
+    goToCurrentPage();
+  } else {
+    console.log("[INFO] Всички стъпки завършени!");
+  }
+}
+
+function goPrevious() {
+  if (progress.currentStep > 0) {
+    progress.currentStep--;
+    localStorage.setItem("brigadeProgress", JSON.stringify(progress));
+    goToCurrentPage();
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+#selection{
+  background-color: #055a30;
+ display: flex;
+ margin-top: 100px;
+ height: 190px;
+
+}
+
+
+
+.footer{
+  margin-top: 350px;
+}
+.box{
+  align-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.box p {
+  color: black !important;
+}
+
+.red {
+  background: white !important;
+}
+
+.green{
+  background-color: white !important; 
+}
+
+/* Скролируем dropdown */
+.dropdown-menu {
+  max-height: 300px; /* или колкото искаш */
+  overflow-y: auto;
+  overflow-x: hidden; /* предотвратява хоризонтално скролване */
+  width: 345px;
+}
+
+#city-input{
+  margin-right: 10px !important;
+}
+
+.box p {
+  font-size: 1rem;
+  color: white;
+  line-height: 30px;
+  align-self: center;
+  align-self: center;
+  margin-bottom: -5px;
+}
+
+.bottom-text p{
+  margin-top: 20px;
+  font-size: 1.2rem;
+  
+  
+}
+
+#selection-bottom{
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  height: 60px;
+  margin-top: -95px;
+  border-radius: 20px;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #055a30;
+}
+
+
+#selection-year{
+  width: 100%;
+  position: absolute;
+  height: 60px;
+  z-index: 20;
+  margin-top: -25px;
+  background-color: #055a30;
+}
+
+
+
+.scrollable-dropdown li {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.scrollable-dropdown button .remove-city {
+  font-size: 14px;
+  padding: 2px 6px;
+  line-height: 1;
+}
+
+.list-group-item .list-group-item-action .selected-cities {
+  color: white !important;
+}
+
+span {
+  color: white;
+}
+
+
+input, button {
+  min-width: 250px;
+}
+
+input {
+  margin-left: 10px !important;
+}
+
+
+ #selection .navbar-collapse {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+
+.top-text {
+  color: black !important;
+  width: 100%;
+  background: linear-gradient(to right, #055a30, #055a45, #07a8a8);
+  margin-bottom: -100px;
+}
+
+.top-text p {
+  font-size: 24px ;
+}
+
+.remove-city{
+  min-width: 25px !important;
+}
+
+.dropdown-menu{
+  max-width: 250px !important;
+  min-width: 250px !important;
+  border-radius: 5%;
+}
+
+.next:hover, .prev:hover {
+  border: none;
+}
+
+.nextButton {
+  background: none;
+  border-style: none;
+}
+
+
+
+.prevButton {
+  background: none;
+  border-style: none;
+}
+@media (max-width:400px){
+  .box p {
+    font-size: 0.8rem;
+  }
+
+  #selection-bottom{
+  min-width: 100vw !important;
+  position: absolute;
+  left: 0;
+}
+
+}
+
+@media (max-width:1000px){
+ .box{
+  margin-top: 0px;
+ }
+
+ #box2{
+  margin-top: 5px;
+ }
+
+#selection {
+  min-height: 450px;
+}
+
+
+.bottom-text p{
+  font-size: 1rem;
+  line-height: 20px;
+  margin-top: -5px;
+  
+}
+
+
+}
+
+@media (max-width: 700px) {
+
+  
+
+   .sector{
+    max-width: 320px;
+    min-width: none;
+    font-size: 15px !important;
+   }
+  
+.bottom-text p{
+  font-size: 0.9rem;
+  line-height: 20px;
+  margin-top: -5px;
+  
+}
+
+#hygiene{
+  margin-bottom: 10px;
+}
+
+
+  #selection-bottom{
+  min-width: 100vw !important;
+  position: absolute;
+  left: 0;
+}
+
+}
+
+@media (min-width:768px){
+  .box{ 
+    max-height: 100px;
+  }
+
+}
+
+@media (min-width:1000px){
+  .box p{
+    font-size: 0.7rem !important;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  #selection{
+    height: 250px !important;
+  }
+}
+
+@media  screen and (max-width: 400px) {
+  .top-text{
+    margin-bottom: -120px;
+  }
+
+.top-text p {
+  font-size: 20px ;
+}
+
+  #trade #hygiene{
+    margin-bottom: -10px !important;
+  }
+}
+@media  screen and (max-width: 350px) {
+
+.top-text p {
+  font-size: 15px !important;
+}
+
+  #trade #hygiene{
+    margin-bottom: -10px !important;
+  }
+  button {
+    min-width: 300px !important;
+    max-width: 300px !important;
+    margin-top: 10px !important;
+    font-size: 10px !important;
+  }
+
+
+  #tourism {
+    margin-top: -10px !important;
+  }
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 350px) {
+  button {
+    min-width: 350px !important;
+    max-width: 350px !important;
+    margin-top: 10px !important;
+  }
+
+  #selection{
+    height: 700px !important;
+  }
+
+  #trade #hygiene {
+    margin-bottom: -10px !important;
+  }
+
+  #tourism {
+    margin-top: -10px !important;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .nav-row{
+    display: flex;
+  }
+
+  #prev{
+    min-height: 39.5px !important;
+    max-height: 39.5px !important;
+  }
+
+  .prev {
+    padding-bottom: -10px;
+  }
+
+
+
+}

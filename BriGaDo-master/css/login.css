@@ -45,11 +45,12 @@ body {
 .btn-custom,
 .btn-custom-login {
     color: var(--btn-color);
-    width: 100%;
+    width: 600px;
+    height: 60px !important;
     background-color: var(--btn-bg-color);
     white-space: normal;
     word-wrap: break-word;
-    padding: 0.5rem;
+    padding: 0.1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,13 +65,20 @@ body {
 }
 
 .btn-custom-login {
-    font-size: 1rem; /* same as form-control-lg */
+    font-size: 1.2rem; /* same as form-control-lg */
     padding: 0.5rem 0.75rem; /* similar vertical rhythm */
     height: 48px; /* matches Bootstrap's .form-control-lg height */
     min-height: auto; /* remove forced min-height */
     border-radius: 10px;
 }
 
+#orm-outline-pass{
+    margin-top: 40px !important;
+}
+
+.form-label{
+    font-size: 1.3rem !important;
+}
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
@@ -207,3 +215,4 @@ body {
 .next-btn, .prev-btn, .skip-btn{
     background: linear-gradient(to right, #055a30, #055a45, #07a8a8);
 }
+

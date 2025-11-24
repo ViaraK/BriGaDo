@@ -1,5 +1,18 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../font/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-    @media screen and  (max-width:600px) {
+
+:root {
+    --font-family: 'Inter';
+    --btn-background:  linear-gradient(to right, #055a30, #055a45, #07a8a8);
+    --btn-color: rgb(255, 255, 255);
+}
+
+@media screen and  (max-width:600px) {
         #selection{
             max-height: 450px !important;
             min-height: 400px !important;

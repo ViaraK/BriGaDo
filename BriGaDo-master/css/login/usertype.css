@@ -1,0 +1,31 @@
+
+:root {
+    --font-family: 'Inter';
+    --btn-bg-color:  linear-gradient(to right, #055a30, #055a45, #07a8a8);
+    --btn-color: rgb(255, 255, 255);
+}
+
+body {
+    background: #f0f0f0;
+}
+
+.menu-box {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.custom-btn {
+    background: linear-gradient(to bottom, #055a30, #055a45, #07a8a8);
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.custom-btn:hover {
+    opacity: 0.9;
+    color: #ffffff;
+}

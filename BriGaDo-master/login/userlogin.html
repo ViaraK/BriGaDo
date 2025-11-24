@@ -10,12 +10,9 @@
 </head>
 <body>
 
-<<<<<<< HEAD
         <!-- Вход на потребител-->
 
 
-=======
->>>>>>> 228f494da240a0b0aed6724a6300628a2fd09d45
   <section class="vh-100 gradient-custom">
     <div class="container py-5 h-100">
       <div class="row justify-content-center align-items-center h-100">
@@ -26,7 +23,7 @@
               <form>
                 <div class="row">
                   <div class="col-md-6 mb-4">
-                    <div data-mdb-input-init class="form-outline">
+                    <div data-mdb-input-init class="form-outline" id-="form-outline-pass">
                         <label class="form-label" for="firstName">Потребителско име или имейл</label>
                       <input type="text" id="firstName" class="form-control form-control-lg" />
                     </div>
@@ -34,7 +31,7 @@
 
                   <div class="col-md-6 mb-4">
                     <div data-mdb-input-init class="form-outline">
-                        <label class="form-label" for="Password">Парола</label>
+                        <label class="form-label" for="Password" id="password-label"><br>Парола</label>
                       <input type="password" id="password" class="form-control form-control-lg" />
                     </div>
                   </div>
@@ -42,7 +39,7 @@
 
                 <div class="mt-4 pt-2 d-flex gap-2">
                   <input data-mdb-ripple-init class="btn btn-lg btn-custom-login"  type="submit" value="Вход" />
-                  <input data-mdb-ripple-init class="btn btn-lg btn-custom-login"  type="submit" value="Нямам профил" />
+                  <input data-mdb-ripple-init class="btn btn-lg btn-custom-login"  type="submit" value="Нямам профил" onclick="window.location.href='./usertype.html'"/>
                 </div>
                 <div class="mt-4 pt-2 d-flex gap-2">
                   <input data-mdb-ripple-init class="btn btn-lg btn-custom-login"  type="submit" value="Забравена парола" />

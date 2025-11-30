@@ -1,4 +1,12 @@
-    @font-face {
+/** Този файл съдържа CSS който е специялно за страниците за избор на година **/
+/*! ДА НЕ СЕ ВКЛЮЧВА, ОСВЕН ВЪВ СЛЕДНИТЕ ФАЙЛОВЕ:
+/*! ===================================|
+/*! brigade-year.html
+/*! ===================================|
+/*? Написан и поддържан от: Марко Златков Стояновски, CTO на BriGaDo */
+
+
+@font-face {
   font-family: 'Inter';
   src: url('../font/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
   font-weight: normal;

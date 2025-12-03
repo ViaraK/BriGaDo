@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
   let currentSlide = 0;
 
   function updateCarousel() {
-    const isMobile = window.innerWidth < 768;
+    const isMobile = window.innerWidth < 1000;
     const containerWidth = row.parentElement.clientWidth;
 
     if (isMobile) {
@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   window.moveCarousel = function(direction) {
-    if (window.innerWidth >= 768) return;
+    if (window.innerWidth >= 1000) return;
 
     currentSlide += direction;
     if (currentSlide < 0) currentSlide = 0;

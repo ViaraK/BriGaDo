@@ -624,7 +624,7 @@ p {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .image-row {
     transform: none !important;
     margin-top: 15px;
@@ -652,7 +652,7 @@ p {
  
 
 .mission-heading p {
-  font-size: 4rem;
+  font-size: 3rem;
   width: 450px;
   color: white;
      font-weight: bolder;
@@ -661,14 +661,13 @@ p {
 @media (max-width: 450px) {
   .mission-heading p {
     font-size: 2rem;
-   transform: translateX(calc(50vw - 20%));
+   
    font-weight: bolder;
   }
 
 @media (max-width: 400px) {
   .mission-heading p {
     font-size: 1.5rem;
-   transform: translateX(calc(50vw - 20%));
    font-weight: bolder;
   }
 
@@ -813,20 +812,19 @@ p {
   margin-bottom: 100px;
   background: #14522f;
   border-radius: 10px;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 15%;
+  margin-right: 15%;
   color: white;
   font-weight: 800;
-  
+  max-height: 100px;
 }
 
 .heading-how-we-are-doing-it p{
   font-size: 3rem;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 @media (max-width: 1000px) {
-
 
   .heading-how-we-are-doing-it p {
     font-size: 2.5rem ;
@@ -889,13 +887,13 @@ p {
 }
 
 .carousel-btn.left {
-  left: 10px; /* distance from the left edge */
-  margin-left: 30px;
+  left:   -10px; /* distance from the left edge */
+  margin-left: 20px;
 }
 
 .carousel-btn.right {
   right: 10px; /* distance from the right edge */
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .carousel-btn:hover {
@@ -964,7 +962,7 @@ p {
   height: 100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .circle-icon {
     font-size: 1.2rem;
     top: 0;
@@ -992,8 +990,8 @@ p {
 /* The heading box styling */
 .advantage-section {
   transform: translateY(50%);
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 15%;
+  margin-right: 15%;
   background: #14522f;
   border-radius: 10px;
   padding: 1rem 3rem;
@@ -1001,6 +999,7 @@ p {
   font-weight: 800;
   z-index: 10;
   text-align: center;
+  max-height: 100px;
 }
 
 
@@ -1032,7 +1031,7 @@ p {
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
 
 .image-advantage-leftmost {
   margin-left: 10%;
@@ -1063,8 +1062,7 @@ p {
 
 @media (max-width: 400px) {
   .advantage-heading p {
-    font-size: 1.1rem;
-    transform: translateX(-25px);
+    font-size: 1rem;
   }
 }
 
@@ -1119,14 +1117,14 @@ p {
 
   @media (max-width: 1000px) {
   .advantage-text {
-    font-size: 1rem;
-    margin-top: 20%;
+    font-size: 1.7rem;
+    margin-top: 15%;
   }
 }
 
 @media (max-width: 1440px) and (min-width: 1000px){
   .advantage-text {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -1144,3 +1142,132 @@ p {
   color: #95191a; /* Text turns red on hover */
 }
 
+@media screen and (max-width: 1200px) {
+  .heading-how-we-are-doing-it p {
+    font-size: 2rem;
+  }
+
+  .advantage-heading p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width:600px){
+  .mission-text{
+    font-size: 1rem;
+  }
+}
+
+
+@media screen and (max-width:400px){
+  .mission-text{
+    font-size: 0.7rem;
+    margin-left: 0px;
+  }
+
+  .heading-how-we-are-doing-it p {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width:500px){
+    .heading-how-we-are-doing-it{
+      margin-left: 0%;
+  margin-right: 0%;
+  }
+  .heading-how-we-are-doing-it p {
+        font-size: 1.6rem;
+
+  }
+
+    .advantage-heading p {
+    font-size: 1.6rem;
+    margin-top: 5%;
+    margin-right: 5%;
+  }
+
+}
+
+
+@media screen and (max-width:350px){
+  .mission-heading p{
+    min-width: 100%;
+    margin-left: 15%;
+  }
+}
+
+
+@media screen and (max-width:500px){
+  .mission-text{
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+
+  .mission-heading{
+    margin-left: 25vw;
+  }
+
+  .advantage-section{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .advantage-heading{
+    margin-top: -4%;
+    margin-bottom: -9%;
+  }
+
+  .advantage-heading p {
+    margin-top: 10px;
+  }
+
+  .mission-text p{
+    font-size: 1.4rem;
+    margin-bottom: -40px;
+    margin-top: -40px;
+  }
+
+  .advantage-text{
+    margin-top: 100px;
+  }
+
+}
+
+@media screen and (max-width:450px) and (min-width:400px){
+  .mission-heading{
+    margin-left: 15vw;
+  }
+}
+
+.mission-content{
+  margin-top: 50px;
+}
+
+@media screen and (max-width:470px) and (min-width:400px) {
+  .advantage-text p {
+    margin-top: 20px !important;
+  }
+}
+
+.mission-text{
+  margin-left: 15px;
+}
+
+@media screen and (max-width:500px) {
+.mission-text p{
+  font-size: 1.4rem;
+}
+
+#mission-vid-1{
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+}
+
+@media screen and (max-width:500px) and (min-width:400px) {
+  .mission-text{
+    margin-top: -50px;
+    margin-bottom: -50px;
+  }
+}

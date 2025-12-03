@@ -1184,7 +1184,7 @@ p {
     .advantage-heading p {
     font-size: 1.6rem;
     margin-top: 5%;
-    margin-right: 5%;
+    margin-left: -5%;
   }
 
 }
@@ -1236,7 +1236,6 @@ p {
 
 @media screen and (max-width:450px) and (min-width:400px){
   .mission-heading{
-    margin-left: 15vw;
   }
 }
 
@@ -1261,13 +1260,40 @@ p {
 
 #mission-vid-1{
   margin-top: 50px;
-  margin-bottom: -50px;
+  margin-bottom: -60px;
 }
 }
 
 @media screen and (max-width:500px) and (min-width:400px) {
   .mission-text{
-    margin-top: -50px;
-    margin-bottom: -50px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
+  .mission-text p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.75 rem;
+  }
+
+  .banner-content{
+    margin-left: -10;
+  }
+
+  .mission-heading p{
+    font-size: 2rem;
+    margin-left: -20px;
+  }
+
+  .banner-image img{
+    width: 250px !important;
+    height: 250px !important;
+  }
+  
+}
+
+@media screen and (min-width:1200px){
+  .advantage-heading p{
+    margin-top: -20px;
   }
 }

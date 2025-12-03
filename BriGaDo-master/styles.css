@@ -154,8 +154,8 @@ p {
 
 .banner-image {
   position: absolute; /* Position absolutely within the top-banner */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for exact centering */
+  left: 90%; /* Center horizontally */
+  transform: translateX(-65%); /* Adjust for exact centering */
 }
 
 .banner-image img {
@@ -164,7 +164,7 @@ p {
 }
 
 /* Responsive layout: Stack content vertically on narrow screens */
-@media (max-width: 850px) {
+@media (max-width: 500px) {
   .top-banner {
     flex-direction: column;
     align-items: center;
@@ -1234,11 +1234,6 @@ p {
 
 }
 
-@media screen and (max-width:450px) and (min-width:400px){
-  .mission-heading{
-  }
-}
-
 .mission-content{
   margin-top: 50px;
 }
@@ -1295,5 +1290,31 @@ p {
 @media screen and (min-width:1200px){
   .advantage-heading p{
     margin-top: -20px;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width:700px){
+  .advantage-heading {
+    margin-top: -30px !important;
+  }
+
+    .banner-image {
+  position: absolute; /* Position absolutely within the top-banner */
+  left: 85%; /* Center horizontally */
+  transform: translateX(-60%); /* Adjust for exact centering */
+}
+}
+
+@media screen and (min-width:700px) and (max-width:1000px) {
+  .banner-image {
+  position: absolute; /* Position absolutely within the top-banner */
+  left: 70%; /* Center horizontally */
+  transform: translateX(-65%); /* Adjust for exact centering */
+}
+
+  .how-we-are-doing-it{
+    margin-top: -70px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }

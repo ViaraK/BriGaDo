@@ -49,7 +49,6 @@ body {
     background-color: var(--btn-bg-color);
     white-space: normal;
     word-wrap: break-word;
-    padding: 0.1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,8 +154,7 @@ body {
         .btn-custom-login {
         font-size: 0.9rem;
         height: 42px; /* slightly smaller for mobile */
-        padding: 0.4rem 0.6rem;
-    }
+        }
 
     .container.py-5.h-100 {
         padding: 1rem 0;
@@ -165,8 +163,9 @@ body {
 
 @media (max-width: 400px) {
 
+
     .form-label{
-        font-size: 0.7rem !important;
+        font-size: 0.64rem !important;
     }
 
     .password-label{
@@ -189,19 +188,20 @@ body {
         margin-top: 2.5px !important;
     }
 
-    .form-control {
-        height: 30px !important;
+    .form-control, .form-control-lg {
+        height: 20px !important;
+        font-size: 0.6rem !important;
     }
 
 
     .btn-custom {
-        font-size: 0.70rem;
+        font-size: 0.60rem;
     }
 
         .btn-custom-login {
-        font-size: 0.70em;
-        height: 35px !important;
-        padding: 0.35rem 0.5rem;
+        font-size: 0.64rem;
+        height: 40px !important;
+        padding: 0.35rem ;
     }
 }
 

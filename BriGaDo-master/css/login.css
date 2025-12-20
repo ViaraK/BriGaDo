@@ -199,8 +199,8 @@ body {
     }
 
         .btn-custom-login {
-        font-size: 0.75rem;
-        height: 38px !important;
+        font-size: 0.70em;
+        height: 35px !important;
         padding: 0.35rem 0.5rem;
     }
 }

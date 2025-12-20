@@ -164,13 +164,43 @@ body {
 }
 
 @media (max-width: 400px) {
+
+    .form-label{
+        font-size: 0.7rem !important;
+    }
+
+    .password-label{
+        margin-bottom: -15px !important;
+    }
+
+    #form-outline-password{
+        margin-top: -40px !important;
+    }
+
+    #name-label{
+        margin-top: -20px !important;
+    }
+
+    #login-submission-buttons{
+        margin-top: -40px !important;
+    }
+
+    #row-2{
+        margin-top: 2.5px !important;
+    }
+
+    .form-control {
+        height: 30px !important;
+    }
+
+
     .btn-custom {
         font-size: 0.70rem;
     }
 
         .btn-custom-login {
-        font-size: 0.70rem;
-        height: 38px;
+        font-size: 0.75rem;
+        height: 38px !important;
         padding: 0.35rem 0.5rem;
     }
 }

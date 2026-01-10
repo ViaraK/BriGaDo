@@ -30,7 +30,7 @@ body {
 .custom-btn {
     background: linear-gradient(to bottom, #055a30, #055a45, #07a8a8);
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 25px !important;
     padding: 15px;
     border-radius: 10px;
 }

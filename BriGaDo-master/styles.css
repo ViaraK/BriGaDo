@@ -137,6 +137,7 @@ p {
   padding: 20px;
   flex-wrap: wrap; /* prevents overflow on smaller screens */
   position: relative; /* Add this for positioning context */
+  margin-bottom: 50px !important;
 }
 
 .banner-content {

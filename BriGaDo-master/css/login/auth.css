@@ -1,0 +1,208 @@
+
+
+
+/* Font */
+@font-face {
+  font-family: 'Inter';
+  src: url('../font/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+/* Variables */
+:root {
+  --font-family: 'Inter';
+  --btn-gradient: linear-gradient(to bottom, #055a30, #055a45, #07a8a8);
+  --bg-color: #f0f0f0;
+  --card-bg: #ffffff;
+  --border-color: #cccccc;
+}
+
+/* Global */
+body {
+  font-family: var(--font-family);
+  font-weight: 600;
+  margin: 0;
+  background-color: var(--bg-color);
+}
+
+/* Layout helpers */
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+.card-registration {
+  width: 100%;
+  max-width: 900px;
+  background: var(--card-bg);
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 8px rgba(0,0,0,0.08);
+}
+
+.card-type-selection {
+  background: var(--card-bg);
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 8px rgba(0,0,0,0.08);
+}
+
+/* Card padding */
+.card-body {
+  padding: clamp(1.2rem, 3vw, 3rem);
+}
+
+/* Labels */
+.form-label,
+label {
+  font-size: clamp(16px, 1.4vw, 20px);
+  line-height: 1.3;
+  min-height: 2.6em;
+  display: flex;
+  align-items: center;
+}
+
+/* Inputs */
+.form-control,
+.form-select {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+/* Fix height consistency */
+.form-control-lg {
+  height: 48px;
+}
+
+/* Gender / radio section */
+#gender,
+#gender-selector-label {
+  font-size: 25px;
+}
+
+/* Buttons */
+.btn,
+.btn-custom,
+.btn-custom-login {
+  width: 100%;
+  height: 56px;
+  border-radius: 10px;
+  font-size: clamp(15px, 1.4vw, 18px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: normal;
+}
+
+.btn-custom,
+.btn-custom-login {
+  background: var(--btn-gradient);
+  color: #ffffff;
+  border: none;
+}
+
+/* Secondary button */
+.btn-outline-secondary {
+  height: 56px;
+}
+
+/* Remove Bootstrap conflicts */
+button:focus,
+input:focus {
+  box-shadow: none !important;
+}
+
+/* Row spacing */
+.row > [class*="col-"] {
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   Responsive breakpoints
+   ========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .card-registration {
+    max-width: 95%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .form-control-lg {
+    height: 44px;
+  }
+
+  .btn,
+  .btn-custom,
+  .btn-custom-login {
+    height: 52px;
+  }
+
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+  .form-control-lg {
+    height: 42px;
+    font-size: 0.9rem;
+  }
+
+  .btn,
+  .btn-custom,
+  .btn-custom-login {
+    height: 48px;
+    font-size: 0.9rem;
+  }
+
+}
+
+/* =========================
+   Font size & family unify
+   ========================= */
+
+:root {
+  --auth-font-size: 25px;
+}
+
+body,
+label,
+input,
+textarea,
+select,
+button,
+h6,
+.form-control,
+.form-select,
+.btn {
+  font-family: var(--font-family) !important;
+  font-size: var(--auth-font-size) !important;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Labels – леко по-ясни, но същия размер */
+label, h2, h3, .form-control{
+  font-weight: 700;
+}
+
+/* Buttons – визуално центриране */
+button,
+.btn {
+  line-height: 1.2;
+}
+.next-btn{
+    margin-left: 30px ;
+}
+
+/* Placeholder да не е различен */
+::placeholder {
+  font-size: var(--auth-font-size);
+  font-weight: 500;
+}

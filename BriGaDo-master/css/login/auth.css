@@ -204,5 +204,9 @@ button,
 /* Placeholder да не е различен */
 ::placeholder {
   font-size: var(--auth-font-size);
-  font-weight: 500;
+  font-weight: 700;
+}
+
+#login-submission-buttons .btn {
+    margin-bottom: 10px; /* 10px между бутоните */
 }

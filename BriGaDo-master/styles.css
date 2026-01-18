@@ -247,10 +247,15 @@ p {
   padding-bottom: 0.5rem;
 }
 
+
 .mission-text {
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  padding-top: 0.5rem;
+  color: white;
+  margin: 10px auto 50px auto; /* центрира блока */
+  max-width: 50vw;
+  padding-bottom: 25px;
+  text-align: center; /* центрира текста */
 }
+
 
 /* Separator */
 .separator {
